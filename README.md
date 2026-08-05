@@ -26,12 +26,12 @@ Query parameters used for testing:
 ## Controls
 
 - **Arrow keys / pointer drag:** move the fiche carriage
-- **Page Up / Page Down / mouse wheel:** magnification
+- **Page Up / Page Down:** magnification
 - **F / G:** focus
 - **1–9:** jump to bulletin, floor limits, pulled account, rules, memo, and paper pages
 - **Tab / Enter:** live-desk controls
 
-Subtitles default on. Sound and progressive film decay can be disabled from the top bar. Reduced-motion preferences disable carriage easing, drift, moving dust, lamp flicker, and terminal typing delay.
+Subtitles default on, and a written transcript of each call stays on the desk until the next one rings. Sound and progressive film decay can be disabled from the top bar. Reduced-motion preferences disable carriage easing, drift, moving dust, lamp flicker, and terminal typing delay.
 
 ## Content tools
 

@@ -1,5 +1,5 @@
 // Game state machine: RINGING → LISTENING → DELIBERATING → CODE_READBACK → RESOLVED
-// DELIBERATING may branch through CALLBACK or replay LISTENING before resolution.
+// DELIBERATING may branch through CALLBACK before resolution.
 // Pure logic + event emitter; no DOM.
 
 import { evaluate } from './rules.js';
@@ -53,16 +53,11 @@ export class Game {
 
   pickup() {
     if (this.state !== 'RINGING') return;
-    this.setState('LISTENING', { call: this.call, replay: false });
+    this.setState('LISTENING', { call: this.call });
   }
 
-  replay() {
-    if (this.state !== 'DELIBERATING') return;
-    this.setState('LISTENING', { call: this.call, replay: true });
-  }
-
-  doneListening(replay = false) {
-    if (this.state === 'LISTENING') this.setState('DELIBERATING', { call: this.call, replay });
+  doneListening() {
+    if (this.state === 'LISTENING') this.setState('DELIBERATING', { call: this.call });
   }
 
   approve() {

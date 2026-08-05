@@ -85,7 +85,7 @@ js/data/merchants.js          recurring merchant cast and floor limits
 js/data/lines.js              spoken fragment and callback composition
 js/data/days.js               JSON loader and deterministic account context
 
-js/ui/desk.js                 live desk DOM and authorization-code grid
+js/ui/desk.js                 live desk DOM, call transcript, and authorization-code grid
 js/ui/fiche.js                carriage, Canvas film treatment, navigation
 js/ui/frames.js               bulletin/account/memo/rule renderers
 js/ui/newspaper.js            multi-column newspaper renderer
@@ -127,7 +127,6 @@ IDLE
   → LISTENING
   → DELIBERATING
       ↘ CALLBACK → DELIBERATING
-      ↘ LISTENING (replay) → DELIBERATING
   → CODE_READBACK or direct decline
   → RESOLVED
 ```
@@ -149,7 +148,6 @@ Audio playback itself is paused from the real-time scaler and receives fixed his
 
 - manual-era initial call: 5 game minutes
 - automated-era initial call: 2 game minutes
-- replay: 8 game minutes
 - callback: 20 game minutes
 
 This avoids making subtitle/audio duration determine whether quotas are mathematically possible while retaining meaningful time costs.
@@ -307,7 +305,6 @@ Navigation:
 Arrow keys      move by frame
 Pointer drag    move carriage
 Page Up/Down    zoom
-Mouse wheel     zoom
 F / G           adjust focus
 1               bulletin
 2               floor limits
@@ -386,7 +383,7 @@ The shipped audio layer provides:
 - terminal beeps
 - 300–3400 Hz telephone filtering
 
-All semantic speech is carried by subtitles and `content/audio/lines.json`.
+All semantic speech is carried by subtitles and `content/audio/lines.json`. A written transcript of the current call (including the callback) accumulates on the live desk until the next call rings, so nothing depends on catching the audio as it plays.
 
 The manifest contains entries shaped as:
 

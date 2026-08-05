@@ -29,8 +29,18 @@ export class Desk {
   logline(t) { this.log.textContent = t; }
 
   enable(which) {
-    for (const id of ['btn-approve', 'btn-decline', 'btn-callback', 'btn-replay', 'btn-pickup'])
+    for (const id of ['btn-approve', 'btn-decline', 'btn-callback', 'btn-pickup'])
       this.$(id).disabled = !which.includes(id);
+  }
+
+  transcriptClear() { this.$('transcript').innerHTML = ''; }
+  transcriptAdd(text, cls) {
+    const p = document.createElement('p');
+    if (cls) p.className = cls;
+    p.textContent = text;
+    const t = this.$('transcript');
+    t.appendChild(p);
+    t.scrollTop = t.scrollHeight;
   }
 
   buildCodeGrid(correct, onPick) {

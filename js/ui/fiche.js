@@ -27,7 +27,6 @@ export class Fiche {
     canvas.addEventListener('pointermove', e => this.pointerMove(e));
     canvas.addEventListener('pointerup', e => this.pointerUp(e));
     canvas.addEventListener('pointercancel', e => this.pointerUp(e));
-    canvas.addEventListener('wheel', e => this.wheel(e), { passive: false });
     requestAnimationFrame(t => this.loop(t));
   }
 
@@ -106,11 +105,6 @@ export class Fiche {
     const { col, row } = this.nearest();
     this.centerOn(col, row);
     if (this.onFrame) this.onFrame(this.frameAt(col, row));
-  }
-
-  wheel(e) {
-    e.preventDefault();
-    this.zoom = Math.max(0.6, Math.min(2.2, this.zoom + (e.deltaY < 0 ? 0.1 : -0.1)));
   }
 
   makeScratches() {

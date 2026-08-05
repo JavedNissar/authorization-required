@@ -49,7 +49,6 @@ function bind() {
   $('btn-approve').onclick = () => game.approve();
   $('btn-decline').onclick = () => game.decline();
   $('btn-callback').onclick = () => game.callback();
-  $('btn-replay').onclick = () => game.replay();
 
   $('btn-mute').onclick = e => flipToggle(e.currentTarget, 'SOUND', enabled => audio.setMuted(!enabled));
   $('btn-subs').onclick = e => flipToggle(e.currentTarget, 'SUBTITLES', enabled => desk.setSubtitles(enabled));
@@ -95,6 +94,7 @@ async function startDay(n) {
   desk.enable([]);
   desk.setPhone('idle', 'LINE IDLE');
   desk.subtitle('');
+  desk.transcriptClear();
   desk.setMeta('');
   desk.setMemos(data.memos || []);
 
@@ -179,6 +179,7 @@ function fireCall(call) {
   if (!game.startCall(call, ctx, rules)) return;
   desk.setPhone('ringing', 'LINE RINGING');
   desk.subtitle('— the phone is ringing —');
+  desk.transcriptClear();
   desk.setMeta(`<b>INCOMING</b> · ${displayMerchant(call).toUpperCase()}`);
   desk.enable(['btn-pickup']);
   audio.startRing();
@@ -187,30 +188,28 @@ function fireCall(call) {
 game.on('state', async ({ state, ...detail }) => {
   switch (state) {
     case 'LISTENING': {
-      const replay = !!detail.replay;
       audio.stopRing();
-      if (!replay) {
-        audio.pickupClick();
-        day.spend(dayNum >= 6 ? 2 : 5);
-      } else day.spend(8);
-      desk.setPhone('live', replay ? 'REPLAYING LINE' : 'LINE LIVE');
+      audio.pickupClick();
+      day.spend(dayNum >= 6 ? 2 : 5);
+      desk.setPhone('live', 'LINE LIVE');
       desk.enable([]);
       const activeCall = game.call;
       for (const fragment of buildScript(activeCall)) {
         if (game.state !== 'LISTENING' || game.call !== activeCall) return;
         desk.subtitle(fragment.text);
+        desk.transcriptAdd(fragment.text);
         await audio.speakLine(fragment.id, fragment.text);
       }
       if (game.state !== 'LISTENING' || game.call !== activeCall) return;
 
       lookupPan = activeCall.card.pan;
       desk.setMeta(`<b>${displayMerchant(activeCall)}</b> · LINE OPEN`);
-      if (dayNum >= 6 && !replay) {
+      if (dayNum >= 6) {
         const verdict = activeCall.terminalVerdict || game.correct;
         await term.query(activeCall.card.pan, activeCall.amount, activeCall.brand || 'CHARGEX');
         await term.verdict(verdict, game.code);
       }
-      if (game.state === 'LISTENING') game.doneListening(replay);
+      if (game.state === 'LISTENING') game.doneListening();
       break;
     }
 
@@ -219,7 +218,7 @@ game.on('state', async ({ state, ...detail }) => {
       desk.subtitle(detail.afterCallback
         ? '— you have the merchant’s answer. the original line is still open. —'
         : '— the line is open. the merchant is waiting. —');
-      const enabled = ['btn-approve', 'btn-decline', 'btn-replay'];
+      const enabled = ['btn-approve', 'btn-decline'];
       if (game.callbackCount === 0) enabled.push('btn-callback');
       desk.enable(enabled);
       fiche.cv.focus();
@@ -235,10 +234,12 @@ game.on('state', async ({ state, ...detail }) => {
       day.spend(20);
       desk.enable([]);
       desk.setPhone('live', 'CALLING BACK');
+      desk.transcriptAdd('— you dial the merchant back —', 'cb-mark');
       const activeCall = game.call;
       for (const fragment of callbackScript(activeCall)) {
         if (game.state !== 'CALLBACK' || game.call !== activeCall) return;
         desk.subtitle(fragment.text);
+        desk.transcriptAdd(fragment.text);
         await audio.speakLine(fragment.id, fragment.text);
       }
       if (game.state !== 'CALLBACK' || game.call !== activeCall) return;

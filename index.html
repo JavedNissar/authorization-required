@@ -33,6 +33,11 @@
         <div id="call-meta"></div>
       </div>
 
+      <div id="transcript-wrap">
+        <h3>CALL TRANSCRIPT</h3>
+        <div id="transcript" tabindex="0" role="log" aria-live="off" aria-label="Transcript of the current call"></div>
+      </div>
+
       <div id="terminal" class="hidden" aria-label="Authorization terminal">
         <div id="term-screen"><pre id="term-text"></pre></div>
       </div>
@@ -41,7 +46,6 @@
         <button type="button" id="btn-approve" class="act approve" disabled>APPROVE</button>
         <button type="button" id="btn-decline" class="act decline" disabled>DECLINE</button>
         <button type="button" id="btn-callback" class="act callback" title="Verification costs substantial shift time" disabled>CALL BACK</button>
-        <button type="button" id="btn-replay" class="act replay" title="Replay costs shift time" disabled>REPLAY CALL</button>
         <button type="button" id="btn-pickup" class="act pickup" disabled>PICK UP</button>
       </div>
 
@@ -67,8 +71,8 @@
     <div class="modal-card">
       <p class="eyebrow">TELEPHONE AUTHORIZATION DESK</p>
       <h1 id="intro-title">AUTHORIZATION REQUIRED</h1>
-      <p>Answer merchant calls. Listen for the card, expiry, name, and amount. Move the fiche carriage to check the bulletin, account file, floor limits, rules, memos, and <i>The Weekly Compass</i>.</p>
-      <p>Approve, decline, or call the merchant back. An approval is not complete until you read back the issued code. Calls, research, replays, and callbacks all consume the shift.</p>
+      <p>Answer merchant calls. Listen for the card, expiry, name, and amount; a transcript of the call stays on the desk while you work. Move the fiche carriage to check the bulletin, account file, floor limits, rules, memos, and <i>The Weekly Compass</i>.</p>
+      <p>Approve, decline, or call the merchant back. An approval is not complete until you read back the issued code. Calls, research, and callbacks all consume the shift.</p>
       <dl class="key-help">
         <div><dt>Carriage</dt><dd>Arrow keys</dd></div>
         <div><dt>Zoom</dt><dd>Page Up / Page Down</dd></div>
