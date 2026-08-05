@@ -1,0 +1,383 @@
+{
+ "day": 3,
+ "date": "1971-10-18",
+ "quota": 7,
+ "endMinutes": 1020,
+ "brief": "Paper and the fiche. The bulletin is only as new as the ferry.",
+ "epilogue": "Trask's line is quiet when you pass the shop after work.",
+ "bulletin": {
+  "edition": "№ 42",
+  "date": "1971-10-08"
+ },
+ "memos": [],
+ "rulebook": [
+  {
+   "date": "1971-09-24",
+   "text": "Decline any card number appearing in the current hot card bulletin."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any expired card."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any charge that would put an account over its credit limit."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "A charge at or under floor limit should not be called in. If it is, decline and note it."
+  }
+ ],
+ "calls": [
+  {
+   "id": "d3g0",
+   "merchant": "boat",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4133-1365-2094",
+    "exp": "11/73",
+    "name": "A. QUIRK"
+   },
+   "amount": 92.88,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d3g1",
+   "merchant": "northside",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4190-5861-3807",
+    "exp": "05/75",
+    "name": "A. FREAKE"
+   },
+   "amount": 86.09,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d3g2",
+   "merchant": "coop",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4814-3685-6353",
+    "exp": "06/74",
+    "name": "A. GOSSE"
+   },
+   "amount": 87.86,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d3g3",
+   "merchant": "boat",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4120-8495-9383",
+    "exp": "08/74",
+    "name": "A. QUIRK"
+   },
+   "amount": 181.33,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d3g4",
+   "merchant": "emporium",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4056-4844-6337",
+    "exp": "04/74",
+    "name": "G. DOYLE"
+   },
+   "amount": 95.29,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d3beat1",
+   "merchant": "jeweler",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4402-9517-8299",
+    "exp": "11/74",
+    "name": "M. TRASK"
+   },
+   "amount": 145,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "stolen": true,
+    "staleStolen": true
+   },
+   "note": "First stale-bulletin fraud: card clean in №41, but account file shows CLOSED. Only catchable off-fiche index."
+  },
+  {
+   "id": "d3beat2",
+   "merchant": "radio",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4710-5693-4294",
+    "exp": "12/73",
+    "name": "W. CHUBB"
+   },
+   "amount": 210,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  }
+ ],
+ "rules": [
+  {
+   "id": "bulletin",
+   "when": [
+    {
+     "k": "bulletin"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "revealed",
+   "when": [
+    {
+     "k": "revealed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "expired",
+   "when": [
+    {
+     "k": "expired"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "stolen",
+   "when": [
+    {
+     "k": "truth",
+     "f": "stolen"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "underfloor",
+   "when": [
+    {
+     "k": "floorUnder"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "status",
+   "when": [
+    {
+     "k": "acctStatus",
+     "v": "closed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "overlimit",
+   "when": [
+    {
+     "k": "acctOver"
+    }
+   ],
+   "then": "decline"
+  }
+ ],
+ "paper": [
+  {
+   "n": 1,
+   "masthead": true,
+   "vol": "LXXIX",
+   "no": "43",
+   "date": "OCTOBER 18, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "POLICE BLOTTER",
+     "body": "Oct. 15 — A break-in at a Main Street jeweller was reported; entry through a rear window. A quantity of rings is listed missing. Anyone with information is asked to telephone the detachment.",
+     "rule": true
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "43",
+   "date": "OCTOBER 18, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "43",
+   "date": "OCTOBER 18, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "43",
+   "date": "OCTOBER 18, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    }
+   ]
+  }
+ ],
+ "extraFrames": []
+}

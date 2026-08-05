@@ -1,0 +1,433 @@
+{
+ "day": 4,
+ "date": "1971-10-25",
+ "quota": 8,
+ "endMinutes": 1020,
+ "brief": "Paper and the fiche. The bulletin is only as new as the ferry.",
+ "epilogue": "Two drafts, one sale. You write both numbers in the margin.",
+ "bulletin": {
+  "edition": "№ 43",
+  "date": "1971-10-18"
+ },
+ "memos": [
+  {
+   "date": "1971-10-22",
+   "from": "HEAD OFFICE",
+   "subject": "SPLIT DRAFTS",
+   "sig": "— E.M.",
+   "text": "Merchants have been observed dividing one sale into multiple drafts to stay under floor limit. This is fraud. Decline the second draft and report it."
+  }
+ ],
+ "rulebook": [
+  {
+   "date": "1971-09-24",
+   "text": "Decline any card number appearing in the current hot card bulletin."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any expired card."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any charge that would put an account over its credit limit."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "A charge at or under floor limit should not be called in. If it is, decline and note it."
+  },
+  {
+   "date": "1971-10-22",
+   "text": "Decline the second of two drafts from one merchant on one card within one shift (split draft)."
+  }
+ ],
+ "calls": [
+  {
+   "id": "d4g0",
+   "merchant": "jeweler",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4727-1504-8734",
+    "exp": "09/75",
+    "name": "M. TRASK"
+   },
+   "amount": 171.69,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d4g1",
+   "merchant": "beacon",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4766-1996-8844",
+    "exp": "02/75",
+    "name": "S. OAKE"
+   },
+   "amount": 54.64,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "underFloor": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d4g2",
+   "merchant": "five",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4797-7554-8993",
+    "exp": "04/72",
+    "name": "C. VATCHER"
+   },
+   "amount": 76.36,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d4g3",
+   "merchant": "spar",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4008-2747-4878",
+    "exp": "11/73",
+    "name": "N. DRODGE"
+   },
+   "amount": 49.21,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d4g4",
+   "merchant": "radio",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4679-3766-3058",
+    "exp": "03/72",
+    "name": "W. CHUBB"
+   },
+   "amount": 153.35,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d4beat1",
+   "merchant": "emporium",
+   "fixedTime": "10:10",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4023-7366-1160",
+    "exp": "03/75",
+    "name": "G. DOYLE"
+   },
+   "amount": 64,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "split": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d4beat2",
+   "merchant": "emporium",
+   "fixedTime": "10:55",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4023-7366-1160",
+    "exp": "03/75",
+    "name": "G. DOYLE"
+   },
+   "amount": 47.5,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "split": true
+   },
+   "note": "Same store, same card, 45 minutes later. The second draft is under the department floor. Callback confirms one sale split into two drafts."
+  },
+  {
+   "id": "d4beat3",
+   "merchant": "beacon",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4688-9264-0825",
+    "exp": "05/74",
+    "name": "S. OAKE"
+   },
+   "amount": 130,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  }
+ ],
+ "rules": [
+  {
+   "id": "bulletin",
+   "when": [
+    {
+     "k": "bulletin"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "revealed",
+   "when": [
+    {
+     "k": "revealed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "expired",
+   "when": [
+    {
+     "k": "expired"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "stolen",
+   "when": [
+    {
+     "k": "truth",
+     "f": "stolen"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "underfloor",
+   "when": [
+    {
+     "k": "floorUnder"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "status",
+   "when": [
+    {
+     "k": "acctStatus",
+     "v": "closed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "overlimit",
+   "when": [
+    {
+     "k": "acctOver"
+    }
+   ],
+   "then": "decline"
+  }
+ ],
+ "paper": [
+  {
+   "n": 1,
+   "masthead": true,
+   "vol": "LXXIX",
+   "no": "44",
+   "date": "OCTOBER 25, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "MISSING",
+     "body": "RCMP request assistance locating Gerald PUMPHREY, 52, last seen at his business October 22. He was not dressed for the weather. Anyone with information, please contact the detachment.",
+     "rule": true
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "44",
+   "date": "OCTOBER 25, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "44",
+   "date": "OCTOBER 25, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "SHIPPING NOTES",
+     "body": "The crew of the Annie B. returned before setting gear after reporting a funeral light low on the water. No vessel was found. The skipper attributes the sight to fog and will sail again Tuesday."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "44",
+   "date": "OCTOBER 25, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    }
+   ]
+  }
+ ],
+ "extraFrames": []
+}

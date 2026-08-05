@@ -1,0 +1,432 @@
+{
+ "day": 5,
+ "date": "1971-11-01",
+ "quota": 9,
+ "endMinutes": 1020,
+ "brief": "Paper and the fiche. The bulletin is only as new as the ferry.",
+ "epilogue": "H. BUTTON remains OPEN in the account file.",
+ "bulletin": {
+  "edition": "№ 43",
+  "date": "1971-10-22"
+ },
+ "memos": [],
+ "rulebook": [
+  {
+   "date": "1971-09-24",
+   "text": "Decline any card number appearing in the current hot card bulletin."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any expired card."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any charge that would put an account over its credit limit."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "A charge at or under floor limit should not be called in. If it is, decline and note it."
+  },
+  {
+   "date": "1971-10-22",
+   "text": "Decline the second of two drafts from one merchant on one card within one shift (split draft)."
+  }
+ ],
+ "calls": [
+  {
+   "id": "d5g0",
+   "merchant": "chemist",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4910-9176-4102",
+    "exp": "07/74",
+    "name": "H. SNOW"
+   },
+   "amount": 41.73,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d5g1",
+   "merchant": "florist",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4256-9762-7052",
+    "exp": "05/72",
+    "name": "P. MINORS"
+   },
+   "amount": 81.15,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d5g2",
+   "merchant": "feed",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4479-5560-7223",
+    "exp": "08/72",
+    "name": "E. GRANDIN"
+   },
+   "amount": 57.7,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d5g3",
+   "merchant": "emporium",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4671-5142-2124",
+    "exp": "02/73",
+    "name": "G. DOYLE"
+   },
+   "amount": 131.09,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d5g4",
+   "merchant": "northside",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4076-8668-6767",
+    "exp": "06/72",
+    "name": "A. FREAKE"
+   },
+   "amount": 59.79,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d5g5",
+   "merchant": "liquor",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4641-5257-3851",
+    "exp": "02/75",
+    "name": "J. STAGG"
+   },
+   "amount": 10.78,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "underFloor": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d5g6",
+   "merchant": "dairy",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4057-6435-0129",
+    "exp": "12/75",
+    "name": "F. CHAYTOR"
+   },
+   "amount": 52.15,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d5beat1",
+   "merchant": "twine",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4456-2807-9840",
+    "exp": "03/73",
+    "name": "H. BUTTON"
+   },
+   "amount": 88,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "deadman": true
+   },
+   "note": "Card name H. BUTTON — the paper buried Hedley Button in the day-1 edition. Account file still OPEN. Rules say approve; the paper says the man is dead. Callback reveals."
+  },
+  {
+   "id": "d5beat2",
+   "merchant": "northside",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4061-5229-5184",
+    "exp": "03/70",
+    "name": "A. FREAKE"
+   },
+   "amount": 64.25,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": true
+   },
+   "note": ""
+  }
+ ],
+ "rules": [
+  {
+   "id": "bulletin",
+   "when": [
+    {
+     "k": "bulletin"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "revealed",
+   "when": [
+    {
+     "k": "revealed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "expired",
+   "when": [
+    {
+     "k": "expired"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "stolen",
+   "when": [
+    {
+     "k": "truth",
+     "f": "stolen"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "underfloor",
+   "when": [
+    {
+     "k": "floorUnder"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "status",
+   "when": [
+    {
+     "k": "acctStatus",
+     "v": "closed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "overlimit",
+   "when": [
+    {
+     "k": "acctOver"
+    }
+   ],
+   "then": "decline"
+  }
+ ],
+ "paper": [
+  {
+   "n": 1,
+   "masthead": true,
+   "vol": "LXXIX",
+   "no": "45",
+   "date": "NOVEMBER 1, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "IN MEMORIAM",
+     "body": "BUTTON — In loving memory of Hedley Button, who passed away one month ago. Ever remembered by his family. — 'The sea gives and the sea takes.'"
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "45",
+   "date": "NOVEMBER 1, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "45",
+   "date": "NOVEMBER 1, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "45",
+   "date": "NOVEMBER 1, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "CLASSIFIED — BOX 22",
+     "body": "WANTED — Bread, day-old or fresh. Any quantity, ongoing. Leave at the newspaper office. No calls."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    }
+   ]
+  }
+ ],
+ "extraFrames": []
+}

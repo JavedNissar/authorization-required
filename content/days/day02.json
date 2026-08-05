@@ -1,0 +1,377 @@
+{
+ "day": 2,
+ "date": "1971-10-11",
+ "quota": 6,
+ "endMinutes": 1020,
+ "brief": "Paper and the fiche. The bulletin is only as new as the ferry.",
+ "epilogue": "The №42 bulletin is still on the mainland. You file the №41 again.",
+ "bulletin": {
+  "edition": "№ 41",
+  "date": "1971-09-24"
+ },
+ "memos": [
+  {
+   "date": "1971-10-08",
+   "from": "HEAD OFFICE",
+   "subject": "BULLETIN №42 DELAYED",
+   "sig": "— E.M.",
+   "text": "The №42 hot card bulletin was held on the mainland with Thursday's mail. The №41 edition remains in force. Numbers cancelled after printing do not appear; check the account file when in doubt."
+  }
+ ],
+ "rulebook": [
+  {
+   "date": "1971-09-24",
+   "text": "Decline any card number appearing in the current hot card bulletin."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any expired card."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any charge that would put an account over its credit limit."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "A charge at or under floor limit should not be called in. If it is, decline and note it."
+  }
+ ],
+ "calls": [
+  {
+   "id": "d2g0",
+   "merchant": "beacon",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4285-8802-3754",
+    "exp": "09/72",
+    "name": "S. OAKE"
+   },
+   "amount": 27.04,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "underFloor": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d2g1",
+   "merchant": "northside",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4240-8223-0969",
+    "exp": "06/72",
+    "name": "A. FREAKE"
+   },
+   "amount": 112.36,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d2g2",
+   "merchant": "spar",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4386-5634-6422",
+    "exp": "04/72",
+    "name": "N. DRODGE"
+   },
+   "amount": 66.59,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d2g3",
+   "merchant": "boat",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4888-7635-9950",
+    "exp": "02/75",
+    "name": "A. QUIRK"
+   },
+   "amount": 163.24,
+   "correct": "approve",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d2beat1",
+   "merchant": "crown",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4522-4782-0179",
+    "exp": "10/74",
+    "name": "V. BARBOUR"
+   },
+   "amount": 41.6,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": "Bulletin hit — second lesson."
+  },
+  {
+   "id": "d2beat2",
+   "merchant": "tideway",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4057-0566-3672",
+    "exp": "02/72",
+    "name": "M. PELLEY"
+   },
+   "amount": 22,
+   "correct": "decline",
+   "terminalVerdict": null,
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "underFloor": true
+   },
+   "note": "Under floor again. Pharmacy owner sounds flustered."
+  }
+ ],
+ "rules": [
+  {
+   "id": "bulletin",
+   "when": [
+    {
+     "k": "bulletin"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "revealed",
+   "when": [
+    {
+     "k": "revealed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "expired",
+   "when": [
+    {
+     "k": "expired"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "stolen",
+   "when": [
+    {
+     "k": "truth",
+     "f": "stolen"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "underfloor",
+   "when": [
+    {
+     "k": "floorUnder"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "status",
+   "when": [
+    {
+     "k": "acctStatus",
+     "v": "closed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "overlimit",
+   "when": [
+    {
+     "k": "acctOver"
+    }
+   ],
+   "then": "decline"
+  }
+ ],
+ "paper": [
+  {
+   "n": 1,
+   "masthead": true,
+   "vol": "LXXIX",
+   "no": "42",
+   "date": "OCTOBER 11, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "OBITUARY",
+     "body": "LODER — At her residence, October 9, aged 77 years, Mrs. Beatrice LODER, aunt of Dorcas Loder of the Salt Box Café. Funeral Wednesday.",
+     "rule": true
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "42",
+   "date": "OCTOBER 11, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "42",
+   "date": "OCTOBER 11, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "FROM THE COMPASS, 1911",
+     "body": "Children picking berries beyond the last houses were reminded to carry a heel of bread in a pocket. Older residents call it an unnecessary custom but agree there is no harm in keeping it.",
+     "rule": true
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "masthead": false,
+   "vol": "LXXIX",
+   "no": "42",
+   "date": "OCTOBER 11, 1971",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    }
+   ]
+  }
+ ],
+ "extraFrames": []
+}

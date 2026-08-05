@@ -1,0 +1,297 @@
+{
+ "day": 12,
+ "date": "1977-03-07",
+ "quota": 5,
+ "endMinutes": 960,
+ "brief": "VISA. Merchant terminals now handle most charges. A few calls still reach the desk.",
+ "epilogue": "VISA. Easy to say in any language, belonging to no place.",
+ "bulletin": {
+  "edition": "№ 8",
+  "date": "1977-03-01"
+ },
+ "memos": [
+  {
+   "date": "1977-02-28",
+   "from": "HEAD OFFICE",
+   "subject": "VISA",
+   "sig": "— E.M.",
+   "text": "Effective March, Chargex is retired. All cards, drafts and signage are reissued under the name VISA. The name was chosen to imply no nationality and to be easy to say in any language. Treat this as a routine rebrand."
+  }
+ ],
+ "rulebook": [
+  {
+   "date": "1971-09-24",
+   "text": "Decline any card number appearing in the current hot card bulletin."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any expired card."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any charge that would put an account over its credit limit."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "A charge at or under floor limit should not be called in. If it is, decline and note it."
+  },
+  {
+   "date": "1971-10-22",
+   "text": "Decline the second of two drafts from one merchant on one card within one shift (split draft)."
+  },
+  {
+   "date": "1973-04-02",
+   "text": "Key every call into the terminal and relay its verdict."
+  },
+  {
+   "date": "1973-04-23",
+   "text": "Where terminal and desk disagree, the clerk is responsible. Use judgment. (April 9 memo also in force.)"
+  },
+  {
+   "date": "1977-02-28",
+   "text": "The card is now VISA. Chargex drafts remain valid through March."
+  }
+ ],
+ "calls": [
+  {
+   "id": "d12g0",
+   "merchant": "lighthouse",
+   "brand": "VISA",
+   "card": {
+    "pan": "4230-6979-8665",
+    "exp": "07/78",
+    "name": "G. PUMPHREY"
+   },
+   "amount": 43.53,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d12g1",
+   "merchant": "laundro",
+   "brand": "VISA",
+   "card": {
+    "pan": "4287-1175-5752",
+    "exp": "06/80",
+    "name": "J. CLOUTER"
+   },
+   "amount": 31.94,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d12g2",
+   "merchant": "jeweler",
+   "brand": "VISA",
+   "card": {
+    "pan": "4373-6936-9267",
+    "exp": "11/79",
+    "name": "M. TRASK"
+   },
+   "amount": 177.73,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "acctOver": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d12beat1",
+   "merchant": "crown",
+   "brand": "VISA",
+   "card": {
+    "pan": "4815-0526-3577",
+    "exp": "05/81",
+    "name": "V. BARBOUR"
+   },
+   "amount": 58,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d12beat2",
+   "merchant": "emporium",
+   "brand": "VISA",
+   "card": {
+    "pan": "4135-2593-5846",
+    "exp": "07/81",
+    "name": "G. DOYLE"
+   },
+   "amount": 61,
+   "correct": "decline",
+   "terminalVerdict": "refer",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "tomorrow": true
+   },
+   "note": "The draft is dated tomorrow."
+  }
+ ],
+ "rules": [
+  {
+   "id": "bulletin",
+   "when": [
+    {
+     "k": "bulletin"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "revealed",
+   "when": [
+    {
+     "k": "revealed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "expired",
+   "when": [
+    {
+     "k": "expired"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "stolen",
+   "when": [
+    {
+     "k": "truth",
+     "f": "stolen"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "underfloor",
+   "when": [
+    {
+     "k": "floorUnder"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "status",
+   "when": [
+    {
+     "k": "acctStatus",
+     "v": "closed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "overlimit",
+   "when": [
+    {
+     "k": "acctOver"
+    }
+   ],
+   "then": "decline"
+  }
+ ],
+ "paper": [
+  {
+   "n": 1,
+   "masthead": true,
+   "vol": "LXXXV",
+   "no": "52",
+   "date": "MARCH 7, 1977",
+   "price": "15¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "CHARGEX TO BECOME VISA",
+     "body": "Cardholders are advised that Chargex cards will be reissued under the name VISA beginning in March. Merchant forms and signs will be replaced. There is no change to card accounts. The new name is intended to be easy to say in any language."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    },
+    {
+     "kind": "blank",
+     "h": 131
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "masthead": false,
+   "vol": "LXXXV",
+   "no": "52",
+   "date": "MARCH 7, 1977",
+   "price": "15¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+    },
+    {
+     "kind": "blank",
+     "h": 88
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "masthead": false,
+   "vol": "LXXXV",
+   "no": "52",
+   "date": "MARCH 7, 1977",
+   "price": "15¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "kind": "blank",
+     "h": 132
+    }
+   ]
+  }
+ ],
+ "extraFrames": []
+}

@@ -1,0 +1,466 @@
+{
+ "day": 6,
+ "date": "1973-04-02",
+ "quota": 10,
+ "endMinutes": 1020,
+ "brief": "The terminal is live. Key the number and read its verdict back.",
+ "epilogue": "The terminal hums where the quiet used to be.",
+ "bulletin": {
+  "edition": "№ 12",
+  "date": "1973-03-28"
+ },
+ "memos": [
+  {
+   "date": "1973-04-02",
+   "from": "HEAD OFFICE",
+   "subject": "AUTOMATED AUTHORIZATION",
+   "sig": "— E.M., SYSTEMS",
+   "text": "Your terminal is live. Key the card number as the merchant reads it; read the verdict back. The system is faster than the fiche. Quotas are adjusted accordingly. The terminal is authoritative."
+  }
+ ],
+ "rulebook": [
+  {
+   "date": "1971-09-24",
+   "text": "Decline any card number appearing in the current hot card bulletin."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any expired card."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any charge that would put an account over its credit limit."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "A charge at or under floor limit should not be called in. If it is, decline and note it."
+  },
+  {
+   "date": "1971-10-22",
+   "text": "Decline the second of two drafts from one merchant on one card within one shift (split draft)."
+  },
+  {
+   "date": "1973-04-02",
+   "text": "Key every call into the terminal and relay its verdict."
+  }
+ ],
+ "calls": [
+  {
+   "id": "d6g0",
+   "merchant": "furniture",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4411-7356-6410",
+    "exp": "03/74",
+    "name": "B. HOLLOWAY"
+   },
+   "amount": 174.85,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d6g1",
+   "merchant": "feed",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4911-7580-6609",
+    "exp": "05/76",
+    "name": "E. GRANDIN"
+   },
+   "amount": 28.74,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "underFloor": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d6g2",
+   "merchant": "pool",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4530-5089-1279",
+    "exp": "01/75",
+    "name": "R. STRICKLAND"
+   },
+   "amount": 58.1,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d6g3",
+   "merchant": "dory",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4919-8592-9859",
+    "exp": "11/74",
+    "name": "P. CARNELL"
+   },
+   "amount": 89.03,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d6g4",
+   "merchant": "chemist",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4604-0541-1198",
+    "exp": "02/76",
+    "name": "H. SNOW"
+   },
+   "amount": 68.33,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d6g5",
+   "merchant": "liquor",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4962-9142-4524",
+    "exp": "12/74",
+    "name": "J. STAGG"
+   },
+   "amount": 44.87,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d6g6",
+   "merchant": "twine",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4650-1949-5110",
+    "exp": "04/75",
+    "name": "H. BUTTON"
+   },
+   "amount": 81.9,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d6g7",
+   "merchant": "emporium",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4534-8700-7817",
+    "exp": "11/75",
+    "name": "G. DOYLE"
+   },
+   "amount": 98.65,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d6beat1",
+   "merchant": "lighthouse",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4312-6178-6285",
+    "exp": "07/74",
+    "name": "G. PUMPHREY"
+   },
+   "amount": 26.4,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d6beat2",
+   "merchant": "furniture",
+   "brand": "CHARGEX",
+   "card": {
+    "pan": "4170-5415-8187",
+    "exp": "04/76",
+    "name": "B. HOLLOWAY"
+   },
+   "amount": 175,
+   "correct": "decline",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": "Terminal says approve; bulletin №43 lists the card. First machine-vs-desk disagreement."
+  }
+ ],
+ "rules": [
+  {
+   "id": "bulletin",
+   "when": [
+    {
+     "k": "bulletin"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "revealed",
+   "when": [
+    {
+     "k": "revealed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "expired",
+   "when": [
+    {
+     "k": "expired"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "stolen",
+   "when": [
+    {
+     "k": "truth",
+     "f": "stolen"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "underfloor",
+   "when": [
+    {
+     "k": "floorUnder"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "status",
+   "when": [
+    {
+     "k": "acctStatus",
+     "v": "closed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "overlimit",
+   "when": [
+    {
+     "k": "acctOver"
+    }
+   ],
+   "then": "decline"
+  }
+ ],
+ "paper": [
+  {
+   "n": 1,
+   "masthead": true,
+   "vol": "LXXXI",
+   "no": "46",
+   "date": "APRIL 2, 1973",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "MERCHANT NOTICE",
+     "body": "Telephone authorizations will be processed by automated system effective this week. The telephone call is unchanged. Merchants should have the card at hand when calling."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "masthead": false,
+   "vol": "LXXXI",
+   "no": "46",
+   "date": "APRIL 2, 1973",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "masthead": false,
+   "vol": "LXXXI",
+   "no": "46",
+   "date": "APRIL 2, 1973",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "masthead": false,
+   "vol": "LXXXI",
+   "no": "46",
+   "date": "APRIL 2, 1973",
+   "price": "10¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+    }
+   ]
+  }
+ ],
+ "extraFrames": []
+}

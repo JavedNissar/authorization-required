@@ -1,0 +1,4253 @@
+{
+  "version": 1,
+  "lines": [
+    {
+      "id": "digit.0",
+      "text": "0",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "digit.1",
+      "text": "1",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "digit.2",
+      "text": "2",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "digit.3",
+      "text": "3",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "digit.4",
+      "text": "4",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "digit.5",
+      "text": "5",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "digit.6",
+      "text": "6",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "digit.7",
+      "text": "7",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "digit.8",
+      "text": "8",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "digit.9",
+      "text": "9",
+      "speaker": "shared",
+      "emotion": "neutral"
+    },
+    {
+      "id": "d1c1.greet",
+      "text": "Hello there, bank.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c1.ident",
+      "text": "Harbour General Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c1.pan",
+      "text": "Card number 4 4 1 2 7 7 1 0 3 3 9 8. Expires 03/73. Name on the card, R. CROCKER.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c1.amt",
+      "text": "Amount is 62 dollars and 40 cents.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c1.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c1.cb",
+      "text": "You ring back. Harbour General Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "harbor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d1c2.greet",
+      "text": "Good morning, bank?",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c2.ident",
+      "text": "Lighthouse Service Station here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c2.pan",
+      "text": "Card number 4 5 0 9 1 1 8 8 7 0 4 2. Expires 11/72. Name on the card, G. PUMPHREY.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c2.amt",
+      "text": "Amount is 34 dollars and 75 cents.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c2.close",
+      "text": "What do you say?",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c2.cb",
+      "text": "You ring back. Lighthouse Service Station confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "lighthouse.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d1c3.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c3.ident",
+      "text": "Marquee Hardware here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c3.pan",
+      "text": "Card number 4 4 7 7 5 5 2 1 0 9 1 6. Expires 06/71. Name on the card, E. MARCHE.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c3.amt",
+      "text": "Amount is 88 dollars and 10 cents.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c3.close",
+      "text": "The customer is waiting.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c3.cb",
+      "text": "You ring back. Marquee Hardware confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "marquee.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d1c4.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c4.ident",
+      "text": "The Salt Box Café here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c4.pan",
+      "text": "Card number 4 4 6 0 9 0 3 3 5 1 7 7. Expires 01/74. Name on the card, D. LODER.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c4.amt",
+      "text": "Amount is 19 dollars and 20 cents.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c4.close",
+      "text": "Could you give us a number?",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c4.cb",
+      "text": "You ring back. The Salt Box Café confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "saltbox.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d1c5.greet",
+      "text": "Hello there, bank.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c5.ident",
+      "text": "Beacon Motel here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c5.pan",
+      "text": "Card number 4 4 3 1 6 6 4 5 8 8 2 0. Expires 09/72. Name on the card, S. OAKE.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c5.amt",
+      "text": "Amount is 96 dollars.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c5.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d1c5.cb",
+      "text": "You ring back. Beacon Motel confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "beacon.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d2g0.greet",
+      "text": "Hello there, bank.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g0.ident",
+      "text": "Beacon Motel here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g0.pan",
+      "text": "Card number 4 2 8 5 8 8 0 2 3 7 5 4. Expires 09/72. Name on the card, S. OAKE.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g0.amt",
+      "text": "Amount is 27 dollars and 04 cents.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g0.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g0.cb",
+      "text": "You ring back. Beacon Motel confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "beacon.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d2g1.greet",
+      "text": "Good morning, bank?",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g1.ident",
+      "text": "Northside Garage here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g1.pan",
+      "text": "Card number 4 2 4 0 8 2 2 3 0 9 6 9. Expires 06/72. Name on the card, A. FREAKE.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g1.amt",
+      "text": "Amount is 112 dollars and 36 cents.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g1.close",
+      "text": "What do you say?",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g1.cb",
+      "text": "You ring back. Northside Garage confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "northside.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d2g2.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g2.ident",
+      "text": "Spar & Sail Clothiers here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g2.pan",
+      "text": "Card number 4 3 8 6 5 6 3 4 6 4 2 2. Expires 04/72. Name on the card, N. DRODGE.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g2.amt",
+      "text": "Amount is 66 dollars and 59 cents.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g2.close",
+      "text": "The customer is waiting.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g2.cb",
+      "text": "You ring back. Spar & Sail Clothiers confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "spar.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d2g3.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g3.ident",
+      "text": "Quirk's Boat Building here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g3.pan",
+      "text": "Card number 4 8 8 8 7 6 3 5 9 9 5 0. Expires 02/75. Name on the card, A. QUIRK.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g3.amt",
+      "text": "Amount is 163 dollars and 24 cents.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g3.close",
+      "text": "Could you give us a number?",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2g3.cb",
+      "text": "You ring back. Quirk's Boat Building confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "boat.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d2beat1.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat1.ident",
+      "text": "Crown & Anchor Tavern here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat1.pan",
+      "text": "Card number 4 5 2 2 4 7 8 2 0 1 7 9. Expires 10/74. Name on the card, V. BARBOUR.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat1.amt",
+      "text": "Amount is 41 dollars and 60 cents.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat1.close",
+      "text": "The customer is waiting.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat1.cb",
+      "text": "You ring back. Crown & Anchor Tavern confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "crown.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d2beat2.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat2.ident",
+      "text": "Tideway Drugs here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat2.pan",
+      "text": "Card number 4 0 5 7 0 5 6 6 3 6 7 2. Expires 02/72. Name on the card, M. PELLEY.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat2.amt",
+      "text": "Amount is 22 dollars.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat2.close",
+      "text": "Could you give us a number?",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d2beat2.cb",
+      "text": "You ring back. Tideway Drugs confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "tideway.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d3g0.greet",
+      "text": "Good morning, bank?",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g0.ident",
+      "text": "Quirk's Boat Building here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g0.pan",
+      "text": "Card number 4 1 3 3 1 3 6 5 2 0 9 4. Expires 11/73. Name on the card, A. QUIRK.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g0.amt",
+      "text": "Amount is 92 dollars and 88 cents.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g0.close",
+      "text": "What do you say?",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g0.cb",
+      "text": "You ring back. Quirk's Boat Building confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "boat.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d3g1.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g1.ident",
+      "text": "Northside Garage here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g1.pan",
+      "text": "Card number 4 1 9 0 5 8 6 1 3 8 0 7. Expires 05/75. Name on the card, A. FREAKE.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g1.amt",
+      "text": "Amount is 86 dollars and 09 cents.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g1.close",
+      "text": "The customer is waiting.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g1.cb",
+      "text": "You ring back. Northside Garage confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "northside.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d3g2.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g2.ident",
+      "text": "Fishermen's Co-op Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g2.pan",
+      "text": "Card number 4 8 1 4 3 6 8 5 6 3 5 3. Expires 06/74. Name on the card, A. GOSSE.",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g2.amt",
+      "text": "Amount is 87 dollars and 86 cents.",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g2.close",
+      "text": "Could you give us a number?",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g2.cb",
+      "text": "You ring back. Fishermen's Co-op Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "coop.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d3g3.greet",
+      "text": "Hello there, bank.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g3.ident",
+      "text": "Quirk's Boat Building here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g3.pan",
+      "text": "Card number 4 1 2 0 8 4 9 5 9 3 8 3. Expires 08/74. Name on the card, A. QUIRK.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g3.amt",
+      "text": "Amount is 181 dollars and 33 cents.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g3.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g3.cb",
+      "text": "You ring back. Quirk's Boat Building confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "boat.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d3g4.greet",
+      "text": "Good morning, bank?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g4.ident",
+      "text": "Doyle's Emporium here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g4.pan",
+      "text": "Card number 4 0 5 6 4 8 4 4 6 3 3 7. Expires 04/74. Name on the card, G. DOYLE.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g4.amt",
+      "text": "Amount is 95 dollars and 29 cents.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g4.close",
+      "text": "What do you say?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3g4.cb",
+      "text": "You ring back. Doyle's Emporium confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "emporium.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d3beat1.greet",
+      "text": "Good morning, bank?",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat1.ident",
+      "text": "Trask & Son Jewellers here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat1.pan",
+      "text": "Card number 4 4 0 2 9 5 1 7 8 2 9 9. Expires 11/74. Name on the card, M. TRASK.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat1.amt",
+      "text": "Amount is 145 dollars.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat1.close",
+      "text": "What do you say?",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat1.cb",
+      "text": "You ring back. A different voice answers. “Trask & Son Jewellers? No, he is not here. He has been gone since the weekend. Who is this?”",
+      "speaker": "jeweler.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d3beat2.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat2.ident",
+      "text": "Breakwater Radio & TV here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat2.pan",
+      "text": "Card number 4 7 1 0 5 6 9 3 4 2 9 4. Expires 12/73. Name on the card, W. CHUBB.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat2.amt",
+      "text": "Amount is 210 dollars.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat2.close",
+      "text": "The customer is waiting.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d3beat2.cb",
+      "text": "You ring back. Breakwater Radio & TV confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "radio.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d4g0.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g0.ident",
+      "text": "Trask & Son Jewellers here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g0.pan",
+      "text": "Card number 4 7 2 7 1 5 0 4 8 7 3 4. Expires 09/75. Name on the card, M. TRASK.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g0.amt",
+      "text": "Amount is 171 dollars and 69 cents.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g0.close",
+      "text": "The customer is waiting.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g0.cb",
+      "text": "You ring back. Trask & Son Jewellers confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "jeweler.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d4g1.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g1.ident",
+      "text": "Beacon Motel here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g1.pan",
+      "text": "Card number 4 7 6 6 1 9 9 6 8 8 4 4. Expires 02/75. Name on the card, S. OAKE.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g1.amt",
+      "text": "Amount is 54 dollars and 64 cents.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g1.close",
+      "text": "Could you give us a number?",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g1.cb",
+      "text": "You ring back. Beacon Motel confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "beacon.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d4g2.greet",
+      "text": "Hello there, bank.",
+      "speaker": "five",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g2.ident",
+      "text": "Five & Dime here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "five",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g2.pan",
+      "text": "Card number 4 7 9 7 7 5 5 4 8 9 9 3. Expires 04/72. Name on the card, C. VATCHER.",
+      "speaker": "five",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g2.amt",
+      "text": "Amount is 76 dollars and 36 cents.",
+      "speaker": "five",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g2.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "five",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g2.cb",
+      "text": "You ring back. Five & Dime confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "five.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d4g3.greet",
+      "text": "Good morning, bank?",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g3.ident",
+      "text": "Spar & Sail Clothiers here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g3.pan",
+      "text": "Card number 4 0 0 8 2 7 4 7 4 8 7 8. Expires 11/73. Name on the card, N. DRODGE.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g3.amt",
+      "text": "Amount is 49 dollars and 21 cents.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g3.close",
+      "text": "What do you say?",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g3.cb",
+      "text": "You ring back. Spar & Sail Clothiers confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "spar.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d4g4.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g4.ident",
+      "text": "Breakwater Radio & TV here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g4.pan",
+      "text": "Card number 4 6 7 9 3 7 6 6 3 0 5 8. Expires 03/72. Name on the card, W. CHUBB.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g4.amt",
+      "text": "Amount is 153 dollars and 35 cents.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g4.close",
+      "text": "The customer is waiting.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4g4.cb",
+      "text": "You ring back. Breakwater Radio & TV confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "radio.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d4beat1.greet",
+      "text": "Hello there, bank.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat1.ident",
+      "text": "Doyle's Emporium here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat1.pan",
+      "text": "Card number 4 0 2 3 7 3 6 6 1 1 6 0. Expires 03/75. Name on the card, G. DOYLE.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat1.amt",
+      "text": "Amount is 64 dollars.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat1.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat1.cb",
+      "text": "You ring back. Doyle's Emporium confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "emporium.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d4beat2.greet",
+      "text": "Good morning, bank?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat2.ident",
+      "text": "Doyle's Emporium here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat2.pan",
+      "text": "Card number 4 0 2 3 7 3 6 6 1 1 6 0. Expires 03/75. Name on the card, G. DOYLE.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat2.amt",
+      "text": "Amount is 47 dollars and 50 cents.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat2.close",
+      "text": "What do you say?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat2.cb",
+      "text": "You ring back. “That was the same sale. Two drafts, yes, but one customer. Why?”",
+      "speaker": "emporium.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d4beat3.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat3.ident",
+      "text": "Beacon Motel here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat3.pan",
+      "text": "Card number 4 6 8 8 9 2 6 4 0 8 2 5. Expires 05/74. Name on the card, S. OAKE.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat3.amt",
+      "text": "Amount is 130 dollars.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat3.close",
+      "text": "The customer is waiting.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d4beat3.cb",
+      "text": "You ring back. Beacon Motel confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "beacon.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d5g0.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g0.ident",
+      "text": "Snow's Chemist Shop here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g0.pan",
+      "text": "Card number 4 9 1 0 9 1 7 6 4 1 0 2. Expires 07/74. Name on the card, H. SNOW.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g0.amt",
+      "text": "Amount is 41 dollars and 73 cents.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g0.close",
+      "text": "Could you give us a number?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g0.cb",
+      "text": "You ring back. Snow's Chemist Shop confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "chemist.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d5g1.greet",
+      "text": "Hello there, bank.",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g1.ident",
+      "text": "Peggy's Flower Cart here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g1.pan",
+      "text": "Card number 4 2 5 6 9 7 6 2 7 0 5 2. Expires 05/72. Name on the card, P. MINORS.",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g1.amt",
+      "text": "Amount is 81 dollars and 15 cents.",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g1.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g1.cb",
+      "text": "You ring back. Peggy's Flower Cart confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "florist.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d5g2.greet",
+      "text": "Good morning, bank?",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g2.ident",
+      "text": "Grandin Feed & Seed here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g2.pan",
+      "text": "Card number 4 4 7 9 5 5 6 0 7 2 2 3. Expires 08/72. Name on the card, E. GRANDIN.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g2.amt",
+      "text": "Amount is 57 dollars and 70 cents.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g2.close",
+      "text": "What do you say?",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g2.cb",
+      "text": "You ring back. Grandin Feed & Seed confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "feed.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d5g3.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g3.ident",
+      "text": "Doyle's Emporium here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g3.pan",
+      "text": "Card number 4 6 7 1 5 1 4 2 2 1 2 4. Expires 02/73. Name on the card, G. DOYLE.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g3.amt",
+      "text": "Amount is 131 dollars and 09 cents.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g3.close",
+      "text": "The customer is waiting.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g3.cb",
+      "text": "You ring back. Doyle's Emporium confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "emporium.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d5g4.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g4.ident",
+      "text": "Northside Garage here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g4.pan",
+      "text": "Card number 4 0 7 6 8 6 6 8 6 7 6 7. Expires 06/72. Name on the card, A. FREAKE.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g4.amt",
+      "text": "Amount is 59 dollars and 79 cents.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g4.close",
+      "text": "Could you give us a number?",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g4.cb",
+      "text": "You ring back. Northside Garage confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "northside.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d5g5.greet",
+      "text": "Hello there, bank.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g5.ident",
+      "text": "Liquor Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g5.pan",
+      "text": "Card number 4 6 4 1 5 2 5 7 3 8 5 1. Expires 02/75. Name on the card, J. STAGG.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g5.amt",
+      "text": "Amount is 10 dollars and 78 cents.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g5.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g5.cb",
+      "text": "You ring back. Liquor Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "liquor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d5g6.greet",
+      "text": "Good morning, bank?",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g6.ident",
+      "text": "Bayview Dairy Bar here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g6.pan",
+      "text": "Card number 4 0 5 7 6 4 3 5 0 1 2 9. Expires 12/75. Name on the card, F. CHAYTOR.",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g6.amt",
+      "text": "Amount is 52 dollars and 15 cents.",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g6.close",
+      "text": "What do you say?",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5g6.cb",
+      "text": "You ring back. Bayview Dairy Bar confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "dairy.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d5beat1.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat1.ident",
+      "text": "Twine Loft Marine Supply here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat1.pan",
+      "text": "Card number 4 4 5 6 2 8 0 7 9 8 4 0. Expires 03/73. Name on the card, H. BUTTON.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat1.amt",
+      "text": "Amount is 88 dollars.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat1.close",
+      "text": "Could you give us a number?",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat1.cb",
+      "text": "You ring back. His wife answers. She is quiet a moment, then: “You must be mistaken. He has been buried a month. Who is using his card?”",
+      "speaker": "twine.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d5beat2.greet",
+      "text": "Hello there, bank.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat2.ident",
+      "text": "Northside Garage here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat2.pan",
+      "text": "Card number 4 0 6 1 5 2 2 9 5 1 8 4. Expires 03/70. Name on the card, A. FREAKE.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat2.amt",
+      "text": "Amount is 64 dollars and 25 cents.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat2.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d5beat2.cb",
+      "text": "You ring back. Northside Garage confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "northside.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6g0.greet",
+      "text": "Hello there, bank.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g0.ident",
+      "text": "Holloway Furniture here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g0.pan",
+      "text": "Card number 4 4 1 1 7 3 5 6 6 4 1 0. Expires 03/74. Name on the card, B. HOLLOWAY.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g0.amt",
+      "text": "Amount is 174 dollars and 85 cents.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g0.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g0.cb",
+      "text": "You ring back. Holloway Furniture confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "furniture.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6g1.greet",
+      "text": "Good morning, bank?",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g1.ident",
+      "text": "Grandin Feed & Seed here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g1.pan",
+      "text": "Card number 4 9 1 1 7 5 8 0 6 6 0 9. Expires 05/76. Name on the card, E. GRANDIN.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g1.amt",
+      "text": "Amount is 28 dollars and 74 cents.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g1.close",
+      "text": "What do you say?",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g1.cb",
+      "text": "You ring back. Grandin Feed & Seed confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "feed.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6g2.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g2.ident",
+      "text": "Rex Pool Room here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g2.pan",
+      "text": "Card number 4 5 3 0 5 0 8 9 1 2 7 9. Expires 01/75. Name on the card, R. STRICKLAND.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g2.amt",
+      "text": "Amount is 58 dollars and 10 cents.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g2.close",
+      "text": "The customer is waiting.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g2.cb",
+      "text": "You ring back. Rex Pool Room confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "pool.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6g3.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g3.ident",
+      "text": "Dory Bookstore here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g3.pan",
+      "text": "Card number 4 9 1 9 8 5 9 2 9 8 5 9. Expires 11/74. Name on the card, P. CARNELL.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g3.amt",
+      "text": "Amount is 89 dollars and 03 cents.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g3.close",
+      "text": "Could you give us a number?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g3.cb",
+      "text": "You ring back. Dory Bookstore confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "dory.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6g4.greet",
+      "text": "Hello there, bank.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g4.ident",
+      "text": "Snow's Chemist Shop here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g4.pan",
+      "text": "Card number 4 6 0 4 0 5 4 1 1 1 9 8. Expires 02/76. Name on the card, H. SNOW.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g4.amt",
+      "text": "Amount is 68 dollars and 33 cents.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g4.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g4.cb",
+      "text": "You ring back. Snow's Chemist Shop confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "chemist.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6g5.greet",
+      "text": "Good morning, bank?",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g5.ident",
+      "text": "Liquor Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g5.pan",
+      "text": "Card number 4 9 6 2 9 1 4 2 4 5 2 4. Expires 12/74. Name on the card, J. STAGG.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g5.amt",
+      "text": "Amount is 44 dollars and 87 cents.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g5.close",
+      "text": "What do you say?",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g5.cb",
+      "text": "You ring back. Liquor Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "liquor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6g6.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g6.ident",
+      "text": "Twine Loft Marine Supply here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g6.pan",
+      "text": "Card number 4 6 5 0 1 9 4 9 5 1 1 0. Expires 04/75. Name on the card, H. BUTTON.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g6.amt",
+      "text": "Amount is 81 dollars and 90 cents.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g6.close",
+      "text": "The customer is waiting.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g6.cb",
+      "text": "You ring back. Twine Loft Marine Supply confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "twine.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6g7.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g7.ident",
+      "text": "Doyle's Emporium here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g7.pan",
+      "text": "Card number 4 5 3 4 8 7 0 0 7 8 1 7. Expires 11/75. Name on the card, G. DOYLE.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g7.amt",
+      "text": "Amount is 98 dollars and 65 cents.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g7.close",
+      "text": "Could you give us a number?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6g7.cb",
+      "text": "You ring back. Doyle's Emporium confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "emporium.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6beat1.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat1.ident",
+      "text": "Lighthouse Service Station here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat1.pan",
+      "text": "Card number 4 3 1 2 6 1 7 8 6 2 8 5. Expires 07/74. Name on the card, G. PUMPHREY.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat1.amt",
+      "text": "Amount is 26 dollars and 40 cents.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat1.close",
+      "text": "The customer is waiting.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat1.cb",
+      "text": "You ring back. Lighthouse Service Station confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "lighthouse.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d6beat2.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat2.ident",
+      "text": "Holloway Furniture here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat2.pan",
+      "text": "Card number 4 1 7 0 5 4 1 5 8 1 8 7. Expires 04/76. Name on the card, B. HOLLOWAY.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat2.amt",
+      "text": "Amount is 175 dollars.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat2.close",
+      "text": "Could you give us a number?",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d6beat2.cb",
+      "text": "You ring back. Holloway Furniture confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "furniture.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7g0.greet",
+      "text": "Good morning, bank?",
+      "speaker": "roper",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g0.ident",
+      "text": "The Roper Men's Wear here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "roper",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g0.pan",
+      "text": "Card number 4 0 8 3 0 1 8 9 5 9 7 9. Expires 02/74. Name on the card, O. HIGGINS.",
+      "speaker": "roper",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g0.amt",
+      "text": "Amount is 54 dollars and 32 cents.",
+      "speaker": "roper",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g0.close",
+      "text": "What do you say?",
+      "speaker": "roper",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g0.cb",
+      "text": "You ring back. The Roper Men's Wear confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "roper.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7g1.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g1.ident",
+      "text": "Doyle's Emporium here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g1.pan",
+      "text": "Card number 4 9 7 2 9 8 8 9 8 1 5 3. Expires 06/77. Name on the card, G. DOYLE.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g1.amt",
+      "text": "Amount is 141 dollars and 69 cents.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g1.close",
+      "text": "The customer is waiting.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g1.cb",
+      "text": "You ring back. Doyle's Emporium confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "emporium.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7g2.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g2.ident",
+      "text": "Harbour General Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g2.pan",
+      "text": "Card number 4 8 0 7 2 6 4 7 0 1 4 9. Expires 02/76. Name on the card, R. CROCKER.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g2.amt",
+      "text": "Amount is 70 dollars and 67 cents.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g2.close",
+      "text": "Could you give us a number?",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g2.cb",
+      "text": "You ring back. Harbour General Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "harbor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7g3.greet",
+      "text": "Hello there, bank.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g3.ident",
+      "text": "Spar & Sail Clothiers here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g3.pan",
+      "text": "Card number 4 6 9 9 0 2 9 5 2 8 2 6. Expires 06/76. Name on the card, N. DRODGE.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g3.amt",
+      "text": "Amount is 73 dollars and 97 cents.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g3.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g3.cb",
+      "text": "You ring back. Spar & Sail Clothiers confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "spar.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7g4.greet",
+      "text": "Good morning, bank?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g4.ident",
+      "text": "Snow's Chemist Shop here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g4.pan",
+      "text": "Card number 4 2 5 3 0 0 0 8 8 9 1 1. Expires 08/72. Name on the card, H. SNOW.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g4.amt",
+      "text": "Amount is 62 dollars and 73 cents.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g4.close",
+      "text": "What do you say?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g4.cb",
+      "text": "You ring back. Snow's Chemist Shop confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "chemist.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7g5.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g5.ident",
+      "text": "Marquee Hardware here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g5.pan",
+      "text": "Card number 4 7 4 4 6 1 3 9 0 0 1 4. Expires 03/74. Name on the card, E. MARCHE.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g5.amt",
+      "text": "Amount is 65 dollars and 87 cents.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g5.close",
+      "text": "The customer is waiting.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g5.cb",
+      "text": "You ring back. Marquee Hardware confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "marquee.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7g6.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g6.ident",
+      "text": "Northside Garage here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g6.pan",
+      "text": "Card number 4 4 7 7 9 0 8 2 1 9 9 6. Expires 11/75. Name on the card, A. FREAKE.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g6.amt",
+      "text": "Amount is 76 dollars and 19 cents.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g6.close",
+      "text": "Could you give us a number?",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g6.cb",
+      "text": "You ring back. Northside Garage confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "northside.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7g7.greet",
+      "text": "Hello there, bank.",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g7.ident",
+      "text": "Breakwater Taxi here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g7.pan",
+      "text": "Card number 4 5 2 7 8 5 7 6 6 9 7 8. Expires 05/75. Name on the card, D. RENDELL.",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g7.amt",
+      "text": "Amount is 64 dollars and 59 cents.",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g7.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7g7.cb",
+      "text": "You ring back. Breakwater Taxi confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "taxi.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7beat1.greet",
+      "text": "Good morning, bank?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat1.ident",
+      "text": "Dory Bookstore here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat1.pan",
+      "text": "Card number 4 2 5 7 9 9 2 4 4 1 1 9. Expires 03/72. Name on the card, P. CARNELL.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat1.amt",
+      "text": "Amount is 52 dollars.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat1.close",
+      "text": "What do you say?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat1.cb",
+      "text": "You ring back. Dory Bookstore confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "dory.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7beat2.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat2.ident",
+      "text": "Liquor Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat2.pan",
+      "text": "Card number 4 6 0 4 0 0 0 8 8 0 6 6. Expires 07/75. Name on the card, J. STAGG.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat2.amt",
+      "text": "Amount is 19 dollars and 75 cents.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat2.close",
+      "text": "The customer is waiting.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat2.cb",
+      "text": "You ring back. Liquor Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "liquor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d7beat3.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat3.ident",
+      "text": "Quirk's Boat Building here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat3.pan",
+      "text": "Card number 4 0 6 4 0 5 0 1 2 9 6 2. Expires 10/77. Name on the card, A. QUIRK.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat3.amt",
+      "text": "Amount is 230 dollars.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat3.close",
+      "text": "Could you give us a number?",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d7beat3.cb",
+      "text": "You ring back. Quirk's Boat Building confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "boat.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g0.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g0.ident",
+      "text": "Breakwater Radio & TV here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g0.pan",
+      "text": "Card number 4 8 8 8 3 1 9 6 8 7 1 5. Expires 04/75. Name on the card, W. CHUBB.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g0.amt",
+      "text": "Amount is 122 dollars and 40 cents.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g0.close",
+      "text": "The customer is waiting.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g0.cb",
+      "text": "You ring back. Breakwater Radio & TV confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "radio.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g1.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g1.ident",
+      "text": "Dory Bookstore here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g1.pan",
+      "text": "Card number 4 3 1 6 0 5 9 7 4 8 7 9. Expires 05/76. Name on the card, P. CARNELL.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g1.amt",
+      "text": "Amount is 50 dollars and 61 cents.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g1.close",
+      "text": "Could you give us a number?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g1.cb",
+      "text": "You ring back. Dory Bookstore confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "dory.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g2.greet",
+      "text": "Hello there, bank.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g2.ident",
+      "text": "Rex Pool Room here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g2.pan",
+      "text": "Card number 4 2 0 8 3 1 8 7 9 1 6 2. Expires 03/74. Name on the card, R. STRICKLAND.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g2.amt",
+      "text": "Amount is 63 dollars and 18 cents.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g2.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g2.cb",
+      "text": "You ring back. Rex Pool Room confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "pool.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g3.greet",
+      "text": "Good morning, bank?",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g3.ident",
+      "text": "Liquor Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g3.pan",
+      "text": "Card number 4 4 9 7 7 6 4 8 1 6 3 4. Expires 03/76. Name on the card, J. STAGG.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g3.amt",
+      "text": "Amount is 41 dollars and 40 cents.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g3.close",
+      "text": "What do you say?",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g3.cb",
+      "text": "You ring back. Liquor Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "liquor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g4.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g4.ident",
+      "text": "Liquor Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g4.pan",
+      "text": "Card number 4 7 4 3 1 3 0 8 3 0 7 2. Expires 09/77. Name on the card, J. STAGG.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g4.amt",
+      "text": "Amount is 50 dollars and 04 cents.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g4.close",
+      "text": "The customer is waiting.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g4.cb",
+      "text": "You ring back. Liquor Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "liquor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g5.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g5.ident",
+      "text": "Breakwater Radio & TV here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g5.pan",
+      "text": "Card number 4 5 4 8 6 3 4 9 6 5 1 9. Expires 11/77. Name on the card, W. CHUBB.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g5.amt",
+      "text": "Amount is 53 dollars and 29 cents.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g5.close",
+      "text": "Could you give us a number?",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g5.cb",
+      "text": "You ring back. Breakwater Radio & TV confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "radio.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g6.greet",
+      "text": "Hello there, bank.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g6.ident",
+      "text": "Dory Bookstore here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g6.pan",
+      "text": "Card number 4 9 3 9 3 4 9 9 7 2 0 5. Expires 01/75. Name on the card, P. CARNELL.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g6.amt",
+      "text": "Amount is 67 dollars and 06 cents.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g6.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g6.cb",
+      "text": "You ring back. Dory Bookstore confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "dory.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g7.greet",
+      "text": "Good morning, bank?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g7.ident",
+      "text": "Snow's Chemist Shop here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g7.pan",
+      "text": "Card number 4 6 4 4 8 7 2 7 5 2 8 8. Expires 10/76. Name on the card, H. SNOW.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g7.amt",
+      "text": "Amount is 41 dollars and 55 cents.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g7.close",
+      "text": "What do you say?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g7.cb",
+      "text": "You ring back. Snow's Chemist Shop confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "chemist.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g8.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g8.ident",
+      "text": "Breakwater Radio & TV here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g8.pan",
+      "text": "Card number 4 2 6 2 1 1 8 2 3 6 3 5. Expires 12/74. Name on the card, W. CHUBB.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g8.amt",
+      "text": "Amount is 242 dollars and 50 cents.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g8.close",
+      "text": "The customer is waiting.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g8.cb",
+      "text": "You ring back. Breakwater Radio & TV confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "radio.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8g9.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g9.ident",
+      "text": "Liquor Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g9.pan",
+      "text": "Card number 4 7 2 8 6 3 9 7 4 2 9 3. Expires 05/72. Name on the card, J. STAGG.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g9.amt",
+      "text": "Amount is 34 dollars and 92 cents.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g9.close",
+      "text": "Could you give us a number?",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8g9.cb",
+      "text": "You ring back. Liquor Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "liquor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8beat1.greet",
+      "text": "Hello. It is me again. You know my voice, surely.",
+      "speaker": "marquee",
+      "emotion": "familiar-wrong"
+    },
+    {
+      "id": "d8beat1.ident",
+      "text": "Marquee Hardware here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "marquee",
+      "emotion": "familiar-wrong"
+    },
+    {
+      "id": "d8beat1.pan",
+      "text": "Card number 4 1 5 9 4 7 5 0 3 3 0 9. Expires 09/77. Name on the card, E. MARCHE.",
+      "speaker": "marquee",
+      "emotion": "familiar-wrong"
+    },
+    {
+      "id": "d8beat1.amt",
+      "text": "Amount is 96 dollars.",
+      "speaker": "marquee",
+      "emotion": "familiar-wrong"
+    },
+    {
+      "id": "d8beat1.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "marquee",
+      "emotion": "familiar-wrong"
+    },
+    {
+      "id": "d8beat1.cb",
+      "text": "You ring back. The phone is picked up on the first ring, but no one speaks until you are about to hang up. Then, in the right voice this time, from somewhere with weather in it: “Not today.”",
+      "speaker": "marquee.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d8beat2.greet",
+      "text": "Good morning, bank?",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8beat2.ident",
+      "text": "Grandin Feed & Seed here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8beat2.pan",
+      "text": "Card number 4 2 2 0 2 5 0 0 6 4 1 2. Expires 06/76. Name on the card, E. GRANDIN.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8beat2.amt",
+      "text": "Amount is 88 dollars and 50 cents.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8beat2.close",
+      "text": "What do you say?",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d8beat2.cb",
+      "text": "You ring back. Grandin Feed & Seed confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "feed.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g0.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g0.ident",
+      "text": "Holloway Furniture here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g0.pan",
+      "text": "Card number 4 2 7 7 5 7 2 5 0 8 0 6. Expires 10/77. Name on the card, B. HOLLOWAY.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g0.amt",
+      "text": "Amount is 59 dollars and 53 cents.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g0.close",
+      "text": "Could you give us a number?",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g0.cb",
+      "text": "You ring back. Holloway Furniture confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "furniture.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g1.greet",
+      "text": "Hello there, bank.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g1.ident",
+      "text": "Seaside Laundromat here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g1.pan",
+      "text": "Card number 4 2 3 0 3 5 8 8 5 4 0 5. Expires 11/74. Name on the card, J. CLOUTER.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g1.amt",
+      "text": "Amount is 56 dollars and 04 cents.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g1.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g1.cb",
+      "text": "You ring back. Seaside Laundromat confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "laundro.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g2.greet",
+      "text": "Good morning, bank?",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g2.ident",
+      "text": "Marquee Hardware here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g2.pan",
+      "text": "Card number 4 8 4 5 6 9 9 2 9 5 8 9. Expires 06/72. Name on the card, E. MARCHE.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g2.amt",
+      "text": "Amount is 118 dollars and 71 cents.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g2.close",
+      "text": "What do you say?",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g2.cb",
+      "text": "You ring back. Marquee Hardware confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "marquee.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g3.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g3.ident",
+      "text": "Trask & Son Jewellers here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g3.pan",
+      "text": "Card number 4 5 2 6 6 9 7 7 4 5 6 1. Expires 03/77. Name on the card, M. TRASK.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g3.amt",
+      "text": "Amount is 159 dollars and 56 cents.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g3.close",
+      "text": "The customer is waiting.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g3.cb",
+      "text": "You ring back. Trask & Son Jewellers confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "jeweler.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g4.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g4.ident",
+      "text": "Superior Laundry here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g4.pan",
+      "text": "Card number 4 2 0 8 0 1 1 1 0 5 0 2. Expires 09/72. Name on the card, M. KELLOWAY.",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g4.amt",
+      "text": "Amount is 47 dollars and 14 cents.",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g4.close",
+      "text": "Could you give us a number?",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g4.cb",
+      "text": "You ring back. Superior Laundry confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "laundry.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g5.greet",
+      "text": "Hello there, bank.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g5.ident",
+      "text": "Seaside Laundromat here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g5.pan",
+      "text": "Card number 4 2 9 3 0 2 9 0 1 5 3 6. Expires 08/75. Name on the card, J. CLOUTER.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g5.amt",
+      "text": "Amount is 35 dollars and 72 cents.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g5.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g5.cb",
+      "text": "You ring back. Seaside Laundromat confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "laundro.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g6.greet",
+      "text": "Good morning, bank?",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g6.ident",
+      "text": "Fishermen's Co-op Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g6.pan",
+      "text": "Card number 4 5 9 0 5 7 9 6 6 7 0 2. Expires 08/76. Name on the card, A. GOSSE.",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g6.amt",
+      "text": "Amount is 91 dollars and 11 cents.",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g6.close",
+      "text": "What do you say?",
+      "speaker": "coop",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g6.cb",
+      "text": "You ring back. Fishermen's Co-op Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "coop.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g7.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g7.ident",
+      "text": "Spar & Sail Clothiers here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g7.pan",
+      "text": "Card number 4 3 0 4 0 7 9 8 0 1 9 2. Expires 03/77. Name on the card, N. DRODGE.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g7.amt",
+      "text": "Amount is 12 dollars and 60 cents.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g7.close",
+      "text": "The customer is waiting.",
+      "speaker": "spar",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g7.cb",
+      "text": "You ring back. Spar & Sail Clothiers confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "spar.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g8.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g8.ident",
+      "text": "Grandin Feed & Seed here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g8.pan",
+      "text": "Card number 4 6 3 2 5 6 2 0 6 8 9 6. Expires 07/75. Name on the card, E. GRANDIN.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g8.amt",
+      "text": "Amount is 91 dollars and 12 cents.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g8.close",
+      "text": "Could you give us a number?",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g8.cb",
+      "text": "You ring back. Grandin Feed & Seed confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "feed.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9g9.greet",
+      "text": "Hello there, bank.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g9.ident",
+      "text": "Twine Loft Marine Supply here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g9.pan",
+      "text": "Card number 4 8 3 3 6 1 2 9 6 5 0 4. Expires 06/75. Name on the card, H. BUTTON.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g9.amt",
+      "text": "Amount is 49 dollars and 91 cents.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g9.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9g9.cb",
+      "text": "You ring back. Twine Loft Marine Supply confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "twine.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9beat1.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "bakery",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat1.ident",
+      "text": "Golden Crust Bakery here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "bakery",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat1.pan",
+      "text": "Card number 4 4 5 7 6 0 8 5 1 0 1 5. Expires 04/77. Name on the card, I. NOSEWORTHY.",
+      "speaker": "bakery",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat1.amt",
+      "text": "Amount is 340 dollars.",
+      "speaker": "bakery",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat1.detail",
+      "text": "The order is flour, sugar, lard, salt, and yeast. Enough for a month, perhaps longer.",
+      "speaker": "bakery",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat1.close",
+      "text": "Could you give us a number?",
+      "speaker": "bakery",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat1.cb",
+      "text": "You ring back. Golden Crust Bakery confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "bakery.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d9beat2.greet",
+      "text": "Hello there, bank.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat2.ident",
+      "text": "Tideway Drugs here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat2.pan",
+      "text": "Card number 4 7 1 8 4 1 8 0 9 3 7 5. Expires 09/74. Name on the card, M. PELLEY.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat2.amt",
+      "text": "Amount is 65 dollars.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat2.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d9beat2.cb",
+      "text": "You ring back. Tideway Drugs confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "tideway.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g0.greet",
+      "text": "Good morning, bank?",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g0.ident",
+      "text": "Lighthouse Service Station here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g0.pan",
+      "text": "Card number 4 4 4 9 9 4 0 6 2 9 2 6. Expires 04/77. Name on the card, G. PUMPHREY.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g0.amt",
+      "text": "Amount is 28 dollars and 43 cents.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g0.close",
+      "text": "What do you say?",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g0.cb",
+      "text": "You ring back. Lighthouse Service Station confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "lighthouse.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g1.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g1.ident",
+      "text": "Modern Barber Shop here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g1.pan",
+      "text": "Card number 4 9 1 1 6 9 6 7 2 9 0 5. Expires 04/76. Name on the card, L. PATEY.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g1.amt",
+      "text": "Amount is 36 dollars and 06 cents.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g1.close",
+      "text": "The customer is waiting.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g1.cb",
+      "text": "You ring back. Modern Barber Shop confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "barber.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g2.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g2.ident",
+      "text": "Modern Barber Shop here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g2.pan",
+      "text": "Card number 4 0 5 7 6 8 7 3 7 2 3 1. Expires 12/77. Name on the card, L. PATEY.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g2.amt",
+      "text": "Amount is 63 dollars and 50 cents.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g2.close",
+      "text": "Could you give us a number?",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g2.cb",
+      "text": "You ring back. Modern Barber Shop confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "barber.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g3.greet",
+      "text": "Hello there, bank.",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g3.ident",
+      "text": "Superior Laundry here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g3.pan",
+      "text": "Card number 4 4 1 4 5 6 6 1 9 9 0 0. Expires 09/76. Name on the card, M. KELLOWAY.",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g3.amt",
+      "text": "Amount is 47 dollars and 50 cents.",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g3.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "laundry",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g3.cb",
+      "text": "You ring back. Superior Laundry confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "laundry.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g4.greet",
+      "text": "Good morning, bank?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g4.ident",
+      "text": "Dory Bookstore here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g4.pan",
+      "text": "Card number 4 9 1 2 8 8 4 9 3 3 4 9. Expires 12/77. Name on the card, P. CARNELL.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g4.amt",
+      "text": "Amount is 60 dollars and 30 cents.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g4.close",
+      "text": "What do you say?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g4.cb",
+      "text": "You ring back. Dory Bookstore confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "dory.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g5.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g5.ident",
+      "text": "Doyle's Emporium here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g5.pan",
+      "text": "Card number 4 2 2 3 9 7 8 1 3 5 7 2. Expires 07/75. Name on the card, G. DOYLE.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g5.amt",
+      "text": "Amount is 95 dollars and 92 cents.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g5.close",
+      "text": "The customer is waiting.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g5.cb",
+      "text": "You ring back. Doyle's Emporium confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "emporium.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g6.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g6.ident",
+      "text": "Dory Bookstore here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g6.pan",
+      "text": "Card number 4 3 6 2 0 4 7 4 3 7 5 3. Expires 08/75. Name on the card, P. CARNELL.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g6.amt",
+      "text": "Amount is 56 dollars and 75 cents.",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g6.close",
+      "text": "Could you give us a number?",
+      "speaker": "dory",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g6.cb",
+      "text": "You ring back. Dory Bookstore confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "dory.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g7.greet",
+      "text": "Hello there, bank.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g7.ident",
+      "text": "Snow's Chemist Shop here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g7.pan",
+      "text": "Card number 4 9 8 9 0 9 3 7 3 7 6 8. Expires 11/74. Name on the card, H. SNOW.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g7.amt",
+      "text": "Amount is 43 dollars and 09 cents.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g7.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g7.cb",
+      "text": "You ring back. Snow's Chemist Shop confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "chemist.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g8.greet",
+      "text": "Good morning, bank?",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g8.ident",
+      "text": "Quirk's Boat Building here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g8.pan",
+      "text": "Card number 4 2 6 8 2 5 1 8 8 7 0 7. Expires 09/72. Name on the card, A. QUIRK.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g8.amt",
+      "text": "Amount is 188 dollars and 19 cents.",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g8.close",
+      "text": "What do you say?",
+      "speaker": "boat",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g8.cb",
+      "text": "You ring back. Quirk's Boat Building confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "boat.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10g9.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g9.ident",
+      "text": "Grandin Feed & Seed here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g9.pan",
+      "text": "Card number 4 1 8 0 6 3 4 6 5 9 5 9. Expires 09/74. Name on the card, E. GRANDIN.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g9.amt",
+      "text": "Amount is 88 dollars and 17 cents.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g9.close",
+      "text": "The customer is waiting.",
+      "speaker": "feed",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10g9.cb",
+      "text": "You ring back. Grandin Feed & Seed confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "feed.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d10beat1.greet",
+      "text": "Good morning, bank?",
+      "speaker": "main_st_ghost",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat1.ident",
+      "text": "Hollow Point Chandlery here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "main_st_ghost",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat1.pan",
+      "text": "Card number 4 4 1 7 7 3 8 6 8 7 8 0. Expires 02/76. Name on the card, W. STRIDE.",
+      "speaker": "main_st_ghost",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat1.amt",
+      "text": "Amount is 74 dollars.",
+      "speaker": "main_st_ghost",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat1.close",
+      "text": "What do you say?",
+      "speaker": "main_st_ghost",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat1.cb",
+      "text": "You ring back. The number does not connect. The operator says there is no listing for that business. There never has been.",
+      "speaker": "main_st_ghost.callback",
+      "emotion": "operator"
+    },
+    {
+      "id": "d10beat2.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat2.ident",
+      "text": "Liquor Store here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat2.pan",
+      "text": "Card number 4 2 4 2 6 7 4 2 3 9 1 9. Expires 03/77. Name on the card, J. STAGG.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat2.amt",
+      "text": "Amount is 28 dollars.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat2.close",
+      "text": "The customer is waiting.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d10beat2.cb",
+      "text": "You ring back. Liquor Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "liquor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g0.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g0.ident",
+      "text": "Rex Pool Room here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g0.pan",
+      "text": "Card number 4 9 1 4 2 5 9 9 9 0 6 7. Expires 12/74. Name on the card, R. STRICKLAND.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g0.amt",
+      "text": "Amount is 52 dollars and 61 cents.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g0.close",
+      "text": "The customer is waiting.",
+      "speaker": "pool",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g0.cb",
+      "text": "You ring back. Rex Pool Room confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "pool.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g1.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g1.ident",
+      "text": "Breakwater Radio & TV here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g1.pan",
+      "text": "Card number 4 8 7 7 7 2 7 7 9 3 7 5. Expires 03/74. Name on the card, W. CHUBB.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g1.amt",
+      "text": "Amount is 108 dollars and 45 cents.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g1.close",
+      "text": "Could you give us a number?",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g1.cb",
+      "text": "You ring back. Breakwater Radio & TV confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "radio.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g2.greet",
+      "text": "Hello there, bank.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g2.ident",
+      "text": "Twine Loft Marine Supply here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g2.pan",
+      "text": "Card number 4 7 7 2 9 7 4 7 8 2 1 9. Expires 01/76. Name on the card, H. BUTTON.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g2.amt",
+      "text": "Amount is 187 dollars and 34 cents.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g2.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g2.cb",
+      "text": "You ring back. Twine Loft Marine Supply confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "twine.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g3.greet",
+      "text": "Good morning, bank?",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g3.ident",
+      "text": "Northside Garage here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g3.pan",
+      "text": "Card number 4 5 4 4 5 6 5 5 5 9 1 3. Expires 08/76. Name on the card, A. FREAKE.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g3.amt",
+      "text": "Amount is 34 dollars and 14 cents.",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g3.close",
+      "text": "What do you say?",
+      "speaker": "northside",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g3.cb",
+      "text": "You ring back. Northside Garage confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "northside.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g4.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g4.ident",
+      "text": "Modern Barber Shop here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g4.pan",
+      "text": "Card number 4 8 5 3 3 0 2 2 4 7 4 8. Expires 04/74. Name on the card, L. PATEY.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g4.amt",
+      "text": "Amount is 67 dollars and 09 cents.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g4.close",
+      "text": "The customer is waiting.",
+      "speaker": "barber",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g4.cb",
+      "text": "You ring back. Modern Barber Shop confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "barber.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g5.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g5.ident",
+      "text": "Tideway Drugs here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g5.pan",
+      "text": "Card number 4 1 0 2 6 2 7 5 6 6 8 6. Expires 04/72. Name on the card, M. PELLEY.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g5.amt",
+      "text": "Amount is 40 dollars and 79 cents.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g5.close",
+      "text": "Could you give us a number?",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g5.cb",
+      "text": "You ring back. Tideway Drugs confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "tideway.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g6.greet",
+      "text": "Hello there, bank.",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g6.ident",
+      "text": "Bayview Dairy Bar here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g6.pan",
+      "text": "Card number 4 7 2 8 6 1 4 3 5 6 5 2. Expires 07/77. Name on the card, F. CHAYTOR.",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g6.amt",
+      "text": "Amount is 8 dollars and 74 cents.",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g6.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "dairy",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g6.cb",
+      "text": "You ring back. Bayview Dairy Bar confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "dairy.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g7.greet",
+      "text": "Good morning, bank?",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g7.ident",
+      "text": "The Salt Box Café here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g7.pan",
+      "text": "Card number 4 1 1 8 1 6 5 3 8 0 0 7. Expires 03/72. Name on the card, D. LODER.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g7.amt",
+      "text": "Amount is 43 dollars and 65 cents.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g7.close",
+      "text": "What do you say?",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g7.cb",
+      "text": "You ring back. The Salt Box Café confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "saltbox.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g8.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g8.ident",
+      "text": "Beacon Motel here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g8.pan",
+      "text": "Card number 4 3 3 5 0 0 7 1 9 7 6 1. Expires 01/74. Name on the card, S. OAKE.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g8.amt",
+      "text": "Amount is 91 dollars and 43 cents.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g8.close",
+      "text": "The customer is waiting.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g8.cb",
+      "text": "You ring back. Beacon Motel confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "beacon.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11g9.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g9.ident",
+      "text": "Breakwater Taxi here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g9.pan",
+      "text": "Card number 4 1 6 4 0 5 3 9 9 3 0 7. Expires 01/74. Name on the card, D. RENDELL.",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g9.amt",
+      "text": "Amount is 36 dollars and 88 cents.",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g9.close",
+      "text": "Could you give us a number?",
+      "speaker": "taxi",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11g9.cb",
+      "text": "You ring back. Breakwater Taxi confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "taxi.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11beat1.greet",
+      "text": "Hello there, bank.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat1.ident",
+      "text": "Beacon Motel here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat1.pan",
+      "text": "Card number 4 4 9 0 0 0 1 7 2 2 3 1. Expires 02/74. Name on the card, THE CLERK.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat1.amt",
+      "text": "Amount is 96 dollars.",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat1.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "beacon",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat1.cb",
+      "text": "You ring back. Your own telephone, on your own desk, begins to ring.",
+      "speaker": "beacon.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d11beat2.greet",
+      "text": "Good morning, bank?",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat2.ident",
+      "text": "Twine Loft Marine Supply here. I have a CHARGEX charge that needs authorization.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat2.pan",
+      "text": "Card number 4 7 9 3 0 4 7 7 8 3 0 1. Expires 04/75. Name on the card, H. BUTTON.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat2.amt",
+      "text": "Amount is 112 dollars.",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat2.close",
+      "text": "What do you say?",
+      "speaker": "twine",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d11beat2.cb",
+      "text": "You ring back. Twine Loft Marine Supply confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "twine.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12g0.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g0.ident",
+      "text": "Lighthouse Service Station here. I have a VISA charge that needs authorization.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g0.pan",
+      "text": "Card number 4 2 3 0 6 9 7 9 8 6 6 5. Expires 07/78. Name on the card, G. PUMPHREY.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g0.amt",
+      "text": "Amount is 43 dollars and 53 cents.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g0.close",
+      "text": "Could you give us a number?",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g0.cb",
+      "text": "You ring back. Lighthouse Service Station confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "lighthouse.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12g1.greet",
+      "text": "Hello there, bank.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g1.ident",
+      "text": "Seaside Laundromat here. I have a VISA charge that needs authorization.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g1.pan",
+      "text": "Card number 4 2 8 7 1 1 7 5 5 7 5 2. Expires 06/80. Name on the card, J. CLOUTER.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g1.amt",
+      "text": "Amount is 31 dollars and 94 cents.",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g1.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "laundro",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g1.cb",
+      "text": "You ring back. Seaside Laundromat confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "laundro.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12g2.greet",
+      "text": "Good morning, bank?",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g2.ident",
+      "text": "Trask & Son Jewellers here. I have a VISA charge that needs authorization.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g2.pan",
+      "text": "Card number 4 3 7 3 6 9 3 6 9 2 6 7. Expires 11/79. Name on the card, M. TRASK.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g2.amt",
+      "text": "Amount is 177 dollars and 73 cents.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g2.close",
+      "text": "What do you say?",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g2.cb",
+      "text": "You ring back. Trask & Son Jewellers confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "jeweler.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12beat1.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat1.ident",
+      "text": "Crown & Anchor Tavern here. I have a VISA charge that needs authorization.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat1.pan",
+      "text": "Card number 4 8 1 5 0 5 2 6 3 5 7 7. Expires 05/81. Name on the card, V. BARBOUR.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat1.amt",
+      "text": "Amount is 58 dollars.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat1.close",
+      "text": "Could you give us a number?",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat1.cb",
+      "text": "You ring back. Crown & Anchor Tavern confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "crown.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12beat2.greet",
+      "text": "Hello there, bank.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat2.ident",
+      "text": "Doyle's Emporium here. I have a VISA charge that needs authorization.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat2.pan",
+      "text": "Card number 4 1 3 5 2 5 9 3 5 8 4 6. Expires 07/81. Name on the card, G. DOYLE.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat2.amt",
+      "text": "Amount is 61 dollars.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat2.detail",
+      "text": "One other thing. The date stamped on this sales draft is tomorrow.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat2.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12beat2.cb",
+      "text": "You ring back. “Dated tomorrow?” A pause. “The drafts came printed that way. From the bank. You would know.”",
+      "speaker": "emporium.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d13g0.greet",
+      "text": "Hello there, bank.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g0.ident",
+      "text": "Trask & Son Jewellers here. I have a VISA charge that needs authorization.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g0.pan",
+      "text": "Card number 4 1 0 8 9 5 4 1 1 3 7 3. Expires 08/80. Name on the card, M. TRASK.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g0.amt",
+      "text": "Amount is 121 dollars and 68 cents.",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g0.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "jeweler",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g0.cb",
+      "text": "You ring back. Trask & Son Jewellers confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "jeweler.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d13g1.greet",
+      "text": "Good morning, bank?",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g1.ident",
+      "text": "Tideway Drugs here. I have a VISA charge that needs authorization.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g1.pan",
+      "text": "Card number 4 6 8 2 2 0 0 1 7 0 7 7. Expires 10/81. Name on the card, M. PELLEY.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g1.amt",
+      "text": "Amount is 38 dollars and 41 cents.",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g1.close",
+      "text": "What do you say?",
+      "speaker": "tideway",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13g1.cb",
+      "text": "You ring back. Tideway Drugs confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "tideway.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d13beat1.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13beat1.ident",
+      "text": "Breakwater Radio & TV here. I have a VISA charge that needs authorization.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13beat1.pan",
+      "text": "Card number 4 6 9 0 4 5 3 0 7 8 1 7. Expires 07/83. Name on the card, W. CHUBB.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13beat1.amt",
+      "text": "Amount is 88 dollars.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13beat1.close",
+      "text": "The customer is waiting.",
+      "speaker": "radio",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d13beat1.cb",
+      "text": "You ring back. Breakwater Radio & TV confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "radio.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d13beat2.greet",
+      "text": "…Yes. Hello. Is this the bank?",
+      "speaker": "marquee",
+      "emotion": "too-calm"
+    },
+    {
+      "id": "d13beat2.ident",
+      "text": "Marquee Hardware here. I have a VISA charge that needs authorization.",
+      "speaker": "marquee",
+      "emotion": "too-calm"
+    },
+    {
+      "id": "d13beat2.pan",
+      "text": "Card number 4 5 5 0 0 7 9 5 0 8 1 4. Expires 03/80. Name on the card, A STRANGER.",
+      "speaker": "marquee",
+      "emotion": "too-calm"
+    },
+    {
+      "id": "d13beat2.amt",
+      "text": "Amount is 120 dollars.",
+      "speaker": "marquee",
+      "emotion": "too-calm"
+    },
+    {
+      "id": "d13beat2.close",
+      "text": "You are not the one who decides. You are the part that says it aloud.",
+      "speaker": "marquee",
+      "emotion": "too-calm"
+    },
+    {
+      "id": "d13beat2.cb",
+      "text": "You ring back. Your receiver clicks before the first ring. The voice says, “Still there,” and disconnects.",
+      "speaker": "marquee.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d14g0.greet",
+      "text": "Good morning, bank?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g0.ident",
+      "text": "Doyle's Emporium here. I have a VISA charge that needs authorization.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g0.pan",
+      "text": "Card number 4 6 4 4 3 0 9 6 1 5 8 4. Expires 05/78. Name on the card, G. DOYLE.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g0.amt",
+      "text": "Amount is 72 dollars and 36 cents.",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g0.close",
+      "text": "What do you say?",
+      "speaker": "emporium",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g0.cb",
+      "text": "You ring back. Doyle's Emporium confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "emporium.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d14g1.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g1.ident",
+      "text": "Peggy's Flower Cart here. I have a VISA charge that needs authorization.",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g1.pan",
+      "text": "Card number 4 5 2 0 2 4 0 8 3 8 0 1. Expires 06/80. Name on the card, P. MINORS.",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g1.amt",
+      "text": "Amount is 45 dollars and 03 cents.",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g1.close",
+      "text": "The customer is waiting.",
+      "speaker": "florist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14g1.cb",
+      "text": "You ring back. Peggy's Flower Cart confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "florist.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d14beat1.greet",
+      "text": "Good morning, bank?",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14beat1.ident",
+      "text": "Harbour General Store here. I have a VISA charge that needs authorization.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14beat1.pan",
+      "text": "Card number 4 6 3 8 4 4 6 8 6 1 2 0. Expires 12/80. Name on the card, R. CROCKER.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14beat1.amt",
+      "text": "Amount is 61 dollars.",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14beat1.close",
+      "text": "What do you say?",
+      "speaker": "harbor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d14beat1.cb",
+      "text": "You ring back. Harbour General Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "harbor.callback",
+      "emotion": "guarded"
+    }
+  ]
+}

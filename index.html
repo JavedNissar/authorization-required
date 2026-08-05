@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUTHORIZATION REQUIRED</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%2317130e'/><rect x='3' y='5' width='10' height='7' rx='1' fill='%23d8d0b8'/></svg>">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div id="clock" aria-live="off">08:00</div>
+    <div id="daylabel">DAY 1</div>
+    <div id="quota">QUOTA 0/0</div>
+    <div id="pay">$0.00</div>
+    <button type="button" id="btn-mute" class="chip" aria-pressed="true">SOUND ON</button>
+    <button type="button" id="btn-subs" class="chip" aria-pressed="true">SUBTITLES ON</button>
+    <button type="button" id="btn-decay" class="chip" aria-pressed="true">FILM DECAY ON</button>
+  </header>
+
+  <main id="desk">
+    <section id="reader-wrap" aria-label="Microfiche reader">
+      <canvas id="fiche" width="900" height="640" tabindex="0" aria-describedby="carriage-hint" aria-label="Microfiche view. Arrow keys move the carriage; Page Up and Page Down change magnification; F and G adjust focus."></canvas>
+      <div id="carriage-hint">◀ ▲ ▼ ▶ carriage &nbsp;·&nbsp; PGUP/PGDN zoom &nbsp;·&nbsp; F/G focus &nbsp;·&nbsp; 1–9 jump</div>
+    </section>
+
+    <aside id="live" aria-label="Live desk">
+      <div id="phone" class="idle">
+        <div id="phone-lamp" aria-hidden="true"></div>
+        <div id="phone-state">LINE IDLE</div>
+        <div id="subtitle" aria-live="polite"></div>
+        <div id="call-meta"></div>
+      </div>
+
+      <div id="terminal" class="hidden" aria-label="Authorization terminal">
+        <div id="term-screen"><pre id="term-text"></pre></div>
+      </div>
+
+      <div id="actions">
+        <button type="button" id="btn-approve" class="act approve" disabled>APPROVE</button>
+        <button type="button" id="btn-decline" class="act decline" disabled>DECLINE</button>
+        <button type="button" id="btn-callback" class="act callback" title="Verification costs substantial shift time" disabled>CALL BACK</button>
+        <button type="button" id="btn-replay" class="act replay" title="Replay costs shift time" disabled>REPLAY CALL</button>
+        <button type="button" id="btn-pickup" class="act pickup" disabled>PICK UP</button>
+      </div>
+
+      <div id="readback" class="hidden" role="dialog" aria-label="Authorization code readback">
+        <p>AUTHORIZATION ISSUED</p>
+        <strong id="issued-code" aria-live="polite"></strong>
+        <p>SELECT THE CODE TO READ BACK</p>
+        <div id="code-grid"></div>
+      </div>
+
+      <div id="memo-tray">
+        <h3>MEMO TRAY</h3>
+        <ul id="memos"></ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer id="statusline">
+    <span id="logline"></span>
+  </footer>
+
+  <div id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+    <div class="modal-card">
+      <p class="eyebrow">TELEPHONE AUTHORIZATION DESK</p>
+      <h1 id="intro-title">AUTHORIZATION REQUIRED</h1>
+      <p>Answer merchant calls. Listen for the card, expiry, name, and amount. Move the fiche carriage to check the bulletin, account file, floor limits, rules, memos, and <i>The Weekly Compass</i>.</p>
+      <p>Approve, decline, or call the merchant back. An approval is not complete until you read back the issued code. Calls, research, replays, and callbacks all consume the shift.</p>
+      <dl class="key-help">
+        <div><dt>Carriage</dt><dd>Arrow keys</dd></div>
+        <div><dt>Zoom</dt><dd>Page Up / Page Down</dd></div>
+        <div><dt>Focus</dt><dd>F / G</dd></div>
+        <div><dt>Desk controls</dt><dd>Tab / Enter</dd></div>
+      </dl>
+      <button type="button" id="btn-begin">BEGIN SHIFT</button>
+    </div>
+  </div>
+
+  <div id="day-end" class="hidden" role="dialog" aria-modal="true" aria-labelledby="day-end-title">
+    <div id="day-end-card">
+      <h2 id="day-end-title"></h2>
+      <div id="day-end-body"></div>
+      <button type="button" id="btn-next-day">BEGIN NEXT DAY</button>
+    </div>
+  </div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

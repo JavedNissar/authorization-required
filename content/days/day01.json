@@ -1,0 +1,307 @@
+{
+ "day": 1,
+ "date": "1971-10-04",
+ "quota": 5,
+ "endMinutes": 1020,
+ "brief": "First shift. Bulletin is on the fiche. Floor limits are posted. Calls over floor get authorized — or don't.",
+ "epilogue": "The ferry horn at five. You lock the desk drawer and walk home in the dark.",
+ "bulletin": {
+  "edition": "№ 41",
+  "date": "1971-09-24"
+ },
+ "memos": [
+  {
+   "date": "1971-10-01",
+   "from": "HEAD OFFICE",
+   "subject": "WELCOME — AUTHORIZATION DESK",
+   "sig": "— E.M., REGIONAL",
+   "text": "Effective this date you are the authorization clerk of record. Merchants will telephone charges over their floor limit. Verify the card against the current hot card bulletin and the account file. Speak the authorization code clearly. The code is the proof."
+  }
+ ],
+ "rulebook": [
+  {
+   "date": "1971-09-24",
+   "text": "Decline any card number appearing in the current hot card bulletin."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any expired card."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any charge that would put an account over its credit limit."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "A charge at or under a merchant's floor limit should not be called in. If it is, note it and decline — something is wrong with it."
+  }
+ ],
+ "calls": [
+  {
+   "id": "d1c1",
+   "merchant": "harbor",
+   "fixedTime": "09:15",
+   "card": {
+    "pan": "4412-7710-3398",
+    "exp": "03/73",
+    "name": "R. CROCKER"
+   },
+   "amount": 62.4,
+   "correct": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": "Plain over-floor grocery order. Teaches approve.",
+   "brand": "CHARGEX"
+  },
+  {
+   "id": "d1c2",
+   "merchant": "lighthouse",
+   "card": {
+    "pan": "4509-1188-7042",
+    "exp": "11/72",
+    "name": "G. PUMPHREY"
+   },
+   "amount": 34.75,
+   "correct": "decline",
+   "truth": {
+    "bulletinHit": true,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": "Bulletin hit. Teaches scrolling the bulletin.",
+   "fixedTime": "10:20",
+   "brand": "CHARGEX"
+  },
+  {
+   "id": "d1c3",
+   "merchant": "marquee",
+   "card": {
+    "pan": "4477-5521-0916",
+    "exp": "06/71",
+    "name": "E. MARCHE"
+   },
+   "amount": 88.1,
+   "correct": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": true
+   },
+   "note": "Expired card.",
+   "fixedTime": "11:45",
+   "brand": "CHARGEX"
+  },
+  {
+   "id": "d1c4",
+   "merchant": "saltbox",
+   "card": {
+    "pan": "4460-9033-5177",
+    "exp": "01/74",
+    "name": "D. LODER"
+   },
+   "amount": 19.2,
+   "correct": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "underFloor": true
+   },
+   "note": "Under floor (restaurant 25). Shouldn't be called in.",
+   "fixedTime": "14:10",
+   "brand": "CHARGEX"
+  },
+  {
+   "id": "d1c5",
+   "merchant": "beacon",
+   "card": {
+    "pan": "4431-6645-8820",
+    "exp": "09/72",
+    "name": "S. OAKE"
+   },
+   "amount": 96.0,
+   "correct": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": "Lodging over 75. Clean approve to end the day.",
+   "fixedTime": "15:40",
+   "brand": "CHARGEX"
+  }
+ ],
+ "rules": [
+  {
+   "id": "bulletin",
+   "when": [
+    {
+     "k": "bulletin"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "revealed",
+   "when": [
+    {
+     "k": "revealed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "expired",
+   "when": [
+    {
+     "k": "expired"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "underfloor",
+   "when": [
+    {
+     "k": "floorUnder"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "status",
+   "when": [
+    {
+     "k": "acctStatus",
+     "v": "closed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "overlimit",
+   "when": [
+    {
+     "k": "acctOver"
+    }
+   ],
+   "then": "decline"
+  }
+ ],
+ "paper": [
+  {
+   "n": 1,
+   "masthead": true,
+   "vol": "LXXIX",
+   "no": 41,
+   "date": "FRIDAY, OCTOBER 1, 1971",
+   "cols": 3,
+   "items": [
+    {
+     "head": "FERRY CROSSINGS CANCELLED THURSDAY",
+     "body": "The M.V. Northern Gull remained tied up Thursday as winds in the strait gusted past 50 miles an hour. Mail, the week's second bread shipment, and three passengers bound for appointments across the water were held over. The bulletin from the mainland, due Thursday, is now expected with Friday's crossing, weather permitting.",
+     "rule": true
+    },
+    {
+     "head": "PLANT TO RUN SATURDAYS THROUGH NOVEMBER",
+     "body": "Ocean Belle Fish Products confirms the Saturday shift will continue while the squid landings hold. Plant manager says forty additional seasonal positions are filled. Applications are no longer being taken."
+    },
+    {
+     "head": "LEGION SUPPER SELLS OUT",
+     "body": "The Royal Canadian Legion branch reports its autumn turkey supper served 214 plates. Proceeds to the cenotaph fund. The Ladies' Auxiliary thanks all who donated pies."
+    },
+    {
+     "head": "HIGH SCHOOL TEAM DROPS THIRD STRAIGHT",
+     "body": "The Mariners fell 19–6 on the road Saturday. Coach attributes the loss to 'a long boat ride and short legs.'"
+    },
+    {
+     "head": "WEATHER",
+     "body": "MONDAY fair, high 52. TUESDAY increasing cloud, late rain. WEDNESDAY wind and rain, crossings uncertain. Fog patches mornings this week."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "date": "FRIDAY, OCTOBER 1, 1971",
+   "cols": 3,
+   "items": [
+    {
+     "head": "POLICE BLOTTER",
+     "body": "Sept. 28 — Window reported broken at a Main Street business, nothing taken. Sept. 29 — A dinghy found adrift off the point was claimed by its owner. Sept. 30 — Complaint of a dog barking through the night on Harbour Road; no dog located."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council voted 4–3 to defer the water main extension to the east end until spring. The clerk was directed to write the province regarding the ferry schedule. The Christmas lights budget was set at $175."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings at the government wharf for the week: cod 41,000 lb, squid 68,500 lb, mackerel 12,000 lb. Prices steady. The plant is buying squid at 6¢."
+    },
+    {
+     "head": "CBC RADIO — MONDAY",
+     "body": "6:30 The World This Morning. 7:00 News and Weather. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada (radio)."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "United Church service 11 a.m., Rev. Pelley presiding. The UCW meets Tuesday at the manse. All welcome."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "date": "FRIDAY, OCTOBER 1, 1971",
+   "cols": 3,
+   "items": [
+    {
+     "head": "OBITUARIES",
+     "body": "BUTTON — At the hospital, October 1, Hedley BUTTON, aged 61 years, of this town. Predeceased by his wife Clara. Funeral from Stacey's Funeral Home, Monday 2 p.m. Interment at the United Church cemetery.",
+     "rule": true
+    },
+    {
+     "body": "OAKE — Suddenly, at sea, September 29, Wilfred OAKE, 44. The vessel reached port Tuesday. He leaves his wife Marion and two sons. A service of remembrance will be held at a later date.",
+     "rule": true
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family of the late Wilfred Oake wishes to thank the crew of the Northern Gull, the clergy, and the many friends who called. — MARION OAKE AND SONS"
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. Alonzo Freake, a daughter, September 30. To Mr. and Mrs. W. Chubb, a son, September 27."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted: Mrs. F. Chaytor (observation), Mr. B. Holloway (surgery, doing well). Discharged: Master R. Doyle, Mrs. J. Clouter."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "date": "FRIDAY, OCTOBER 1, 1971",
+   "cols": 3,
+   "items": [
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — 14-ft fibreglass boat and 9.8 hp motor, good order, $375. Apply Tideway Drugs. FOR SALE — Kenmore washer, $40. Phone 236. WANTED — man to shovel coal, Legion, winter. Apply steward."
+    },
+    {
+     "body": "LOST — black retriever dog, answers to SKIPPER, vicinity of the breakwater. Reward. Phone 104. FOUND — set of keys on ring with St. Christopher medal. Inquire this office."
+    },
+    {
+     "body": "WANTED — bread, day-old or fresh, will pay fair price, any quantity, ongoing. Write Box 22, this office. No calls."
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "Arrived: Northern Gull, Thursday late. Sailed: Northern Gull, Friday first light, weather permitting. The coaster Brent H. is expected Tuesday with coal."
+    },
+    {
+     "head": "MERCHANT NOTICE",
+     "body": "Telephone authorization is now in effect for charges above merchant floor limits. Merchants are asked to have the card at hand when calling."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+{
+ "day": 14,
+ "date": "1979-04-09",
+ "quota": 3,
+ "endMinutes": 960,
+ "brief": "VISA. Merchant terminals now handle most charges. A few calls still reach the desk.",
+ "epilogue": "The phone does not ring.",
+ "bulletin": {
+  "edition": "№ 14",
+  "date": "1979-04-03"
+ },
+ "memos": [],
+ "rulebook": [
+  {
+   "date": "1971-09-24",
+   "text": "Decline any card number appearing in the current hot card bulletin."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any expired card."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "Decline any charge that would put an account over its credit limit."
+  },
+  {
+   "date": "1971-09-24",
+   "text": "A charge at or under floor limit should not be called in. If it is, decline and note it."
+  },
+  {
+   "date": "1971-10-22",
+   "text": "Decline the second of two drafts from one merchant on one card within one shift (split draft)."
+  },
+  {
+   "date": "1973-04-02",
+   "text": "Key every call into the terminal and relay its verdict."
+  },
+  {
+   "date": "1973-04-23",
+   "text": "Where terminal and desk disagree, the clerk is responsible. Use judgment. (April 9 memo also in force.)"
+  },
+  {
+   "date": "1977-02-28",
+   "text": "The card is now VISA. Chargex drafts remain valid through March."
+  }
+ ],
+ "calls": [
+  {
+   "id": "d14g0",
+   "merchant": "emporium",
+   "brand": "VISA",
+   "card": {
+    "pan": "4644-3096-1584",
+    "exp": "05/78",
+    "name": "G. DOYLE"
+   },
+   "amount": 72.36,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d14g1",
+   "merchant": "florist",
+   "brand": "VISA",
+   "card": {
+    "pan": "4520-2408-3801",
+    "exp": "06/80",
+    "name": "P. MINORS"
+   },
+   "amount": 45.03,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d14beat1",
+   "merchant": "harbor",
+   "fixedTime": "15:20",
+   "brand": "VISA",
+   "card": {
+    "pan": "4638-4468-6120",
+    "exp": "12/80",
+    "name": "R. CROCKER"
+   },
+   "amount": 61,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": "Last call of the game. Ray Crocker, ordinary as rain."
+  }
+ ],
+ "rules": [
+  {
+   "id": "bulletin",
+   "when": [
+    {
+     "k": "bulletin"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "revealed",
+   "when": [
+    {
+     "k": "revealed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "expired",
+   "when": [
+    {
+     "k": "expired"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "stolen",
+   "when": [
+    {
+     "k": "truth",
+     "f": "stolen"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "underfloor",
+   "when": [
+    {
+     "k": "floorUnder"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "status",
+   "when": [
+    {
+     "k": "acctStatus",
+     "v": "closed"
+    }
+   ],
+   "then": "decline"
+  },
+  {
+   "id": "overlimit",
+   "when": [
+    {
+     "k": "acctOver"
+    }
+   ],
+   "then": "decline"
+  }
+ ],
+ "paper": [
+  {
+   "n": 1,
+   "masthead": true,
+   "vol": "LXXXVII",
+   "no": "54",
+   "date": "APRIL 9, 1979",
+   "price": "20¢",
+   "cols": 3,
+   "items": [
+    {
+     "kind": "blank",
+     "h": 320
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    },
+    {
+     "head": "CLASSIFIED",
+     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+    },
+    {
+     "kind": "blank",
+     "h": 79
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "masthead": false,
+   "vol": "LXXXVII",
+   "no": "54",
+   "date": "APRIL 9, 1979",
+   "price": "20¢",
+   "cols": 3,
+   "items": [
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull will sail Thursday, weather permitting. Freight should be at the wharf one hour before departure."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
+     "kind": "blank",
+     "h": 195
+    }
+   ]
+  }
+ ],
+ "extraFrames": [
+  {
+   "col": 3,
+   "row": 1,
+   "blank": true
+  }
+ ]
+}
