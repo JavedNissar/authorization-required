@@ -17,6 +17,8 @@ Pass a port as the first argument to use a different one:
 tools/serve.sh 9000
 ```
 
+The dev server sends `no-cache` headers and live-reloads the open tab when a source file changes. The reload snippet is injected into served HTML only—files on disk (and the release ZIP) are never modified.
+
 Query parameters used for testing:
 
 - `?seed=1971` — deterministic campaign seed
