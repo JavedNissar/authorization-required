@@ -8,7 +8,7 @@ import * as audio from './engine/audio.js';
 import { Desk } from './ui/desk.js';
 import { Fiche } from './ui/fiche.js';
 import { Terminal } from './ui/terminal.js';
-import { renderBulletin, renderFloors, renderAccountIndex, renderAccount, renderMemo, renderRulebook } from './ui/frames.js';
+import { renderBulletin, renderFloors, renderMerchantProfiles, renderAccountIndex, renderAccount, renderMemo, renderRulebook } from './ui/frames.js';
 import { renderPaperPage } from './ui/newspaper.js';
 
 const params = new URLSearchParams(location.search);
@@ -105,12 +105,13 @@ async function startDay(n) {
 
 function buildFrames(data) {
   const frames = [];
-  // Row 0: current bulletin, floor sheet, account index, standing rules.
+  // Row 0: current bulletin, floor sheet, account index, standing rules, merchant profiles.
   frames.push({ id: 'bulletin', title: 'BULLETIN', col: 0, row: 0, render: (c, w, h, d) => renderBulletin(c, w, h, d, { edition: data.bulletin.edition, date: data.bulletin.date, numbers: [...ctx.bulletin].sort() }) });
   frames.push({ id: 'floors', title: 'FLOORS', col: 1, row: 0, render: (c, w, h) => renderFloors(c, w, h) });
   const accts = [...ctx.accounts.values()].sort((a, b) => a.pan.localeCompare(b.pan));
   frames.push({ id: 'acct-idx', title: 'ACCOUNTS', col: 2, row: 0, render: (c, w, h, d) => renderAccountIndex(c, w, h, d, { count: accts.length, accounts: accts }) });
   frames.push({ id: 'rules', title: 'RULES', col: 3, row: 0, render: (c, w, h, d) => renderRulebook(c, w, h, d, data.rulebook || []) });
+  frames.push({ id: 'merchants', title: 'MERCHANTS', col: 4, row: 0, render: (c, w, h) => renderMerchantProfiles(c, w, h) });
   // Row 1: the pulled account and today's paper memos.
   frames.push({ id: 'acct', title: 'ACCT DETAIL', col: 0, row: 1, render: (c, w, h, d) => renderAccount(c, w, h, d, lookupPan ? ctx.accounts.get(lookupPan) : null) });
   (data.memos || []).slice(0, 3).forEach((m, i) => {

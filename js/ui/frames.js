@@ -27,6 +27,21 @@ export function renderBulletin(c, w, h, d, data) {
   c.fillText('NUMBERS CANCELLED AFTER THIS PRINTING DO NOT APPEAR. — AUTHORIZATION CENTRE', 28, h - 20);
 }
 
+export function renderMerchantProfiles(c, w, h) {
+  header(c, 'MERCHANT PROFILES', 'REGISTERED NAME · OWNER / CONTACT · CATEGORY');
+  const entries = Object.values(MERCHANTS);
+  const rows = Math.ceil(entries.length / 2);
+  entries.forEach((merchant, i) => {
+    const col = Math.floor(i / rows), row = i % rows;
+    const x = 28 + col * 365, y = 98 + row * 19.5;
+    c.font = '700 10.5px "Courier New", monospace';
+    c.fillText(merchant.name.slice(0, 27), x, y);
+    c.font = '10px "Courier New", monospace';
+    const category = merchant.cat === 'department' ? 'department store' : merchant.cat;
+    c.fillText(`${merchant.owner.slice(0, 22)} · ${category.toUpperCase()}`, x, y + 10);
+  });
+}
+
 export function renderFloors(c, w, h) {
   header(c, 'FLOOR LIMITS BY MERCHANT CATEGORY', 'CHARGES AT/UNDER LIMIT ARE NOT TO BE CALLED IN');
   c.font = '15px "Courier New", monospace';

@@ -47,7 +47,7 @@ export class Fiche {
   }
 
   jump(i) {
-    const shortcuts = ['bulletin', 'floors', 'acct', 'rules', 'memo0', 'paper0', 'paper1', 'paper2', 'paper3'];
+    const shortcuts = ['bulletin', 'floors', 'acct', 'rules', 'memo0', 'paper0', 'paper1', 'paper2', 'paper3', 'merchants'];
     const f = this.frames.find(frame => frame.id === shortcuts[i]);
     if (f) this.centerOn(f.col, f.row);
   }
@@ -63,6 +63,7 @@ export class Fiche {
     else if (e.key === 'PageDown') { e.preventDefault(); this.zoom = Math.min(2.2, this.zoom + 0.2); return; }
     else if (e.key === 'PageUp') { e.preventDefault(); this.zoom = Math.max(0.6, this.zoom - 0.2); return; }
     else if (/^[1-9]$/.test(e.key)) { e.preventDefault(); this.jump(+e.key - 1); return; }
+    else if (e.key === '0') { e.preventDefault(); this.jump(9); return; }
     else if (e.key === 'f' || e.key === 'F') { e.preventDefault(); this.focus = Math.min(1, this.focus + 0.1); return; }
     else if (e.key === 'g' || e.key === 'G') { e.preventDefault(); this.focus = Math.max(0, this.focus - 0.1); return; }
     else return;
