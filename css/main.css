@@ -69,6 +69,7 @@ html,body{margin:0;height:100%;background:var(--desk);color:var(--bone);font-fam
 .modal-card h1,#day-end-card h2{margin:0 0 16px;font-family:var(--f-news);letter-spacing:.03em}
 .modal-card p{font:15px/1.5 var(--f-news)}
 .eyebrow{font:11px/1 var(--f-type)!important;letter-spacing:2px;margin:0 0 10px!important}
+.campaign-length{font:700 11px/1 var(--f-type)!important;letter-spacing:1px;text-transform:uppercase;margin:-8px 0 18px!important;opacity:.7}
 .key-help{font-size:12px;border-top:1px solid #c9bfa0;border-bottom:1px solid #c9bfa0;margin:18px 0;display:grid;grid-template-columns:1fr 1fr}
 .key-help div{display:flex;justify-content:space-between;gap:20px;padding:7px 8px;border-bottom:1px dotted #c9bfa0}
 .key-help dt{font-weight:700}.key-help dd{margin:0}

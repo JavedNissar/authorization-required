@@ -1,6 +1,6 @@
 # AUTHORIZATION REQUIRED
 
-A static browser game about working a telephone credit-card authorization desk from 1971–1979. Built with vanilla HTML, CSS, Canvas, Web Audio, ES modules, and JSON—no runtime dependencies or build step.
+A static browser game about working a telephone credit-card authorization desk from 1971–1979. The campaign spans 14 shifts and takes approximately 45–60 minutes. Built with vanilla HTML, CSS, Canvas, Web Audio, ES modules, and JSON—no runtime dependencies or build step.
 
 ## Run locally
 
