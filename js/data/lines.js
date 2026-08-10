@@ -8,12 +8,16 @@ export function buildScript(call) {
   const brand = call.brand || 'CHARGEX';
   const amt = call.amount.toFixed(2);
   const [dollars, cents] = amt.split('.');
-  const pan = call.card.pan.replace(/\D/g, '').split('').join(' ');
+  const spokenPan = call.card.pan.replace(/\D/g, '').split('').join(' ');
   const name = call.card.name;
   const frags = [];
   frags.push({ id: `${call.id}.greet`, text: pickGreet(call) });
   frags.push({ id: `${call.id}.ident`, text: `${m} here. I have a ${brand} charge that needs authorization.` });
-  frags.push({ id: `${call.id}.pan`, text: `Card number ${pan}. Expires ${call.card.exp}. Name on the card, ${name}.` });
+  frags.push({
+    id: `${call.id}.pan`,
+    text: `Card number ${spokenPan}. Expires ${call.card.exp}. Name on the card, ${name}.`,
+    transcript: `Card number ${call.card.pan}. Expires ${call.card.exp}. Name on the card, ${name}.`,
+  });
   frags.push({ id: `${call.id}.amt`, text: `Amount is ${dollars} dollars${cents === '00' ? '' : ` and ${cents} cents`}.` });
 
   if (call.truth?.preparation) {

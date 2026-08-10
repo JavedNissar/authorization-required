@@ -195,7 +195,7 @@ game.on('state', async ({ state, ...detail }) => {
       for (const fragment of buildScript(activeCall)) {
         if (game.state !== 'LISTENING' || game.call !== activeCall) return;
         desk.subtitle(fragment.text);
-        desk.transcriptAdd(fragment.text);
+        desk.transcriptAdd(fragment.transcript || fragment.text);
         await audio.speakLine(fragment.id, fragment.text);
       }
       if (game.state !== 'LISTENING' || game.call !== activeCall) return;
