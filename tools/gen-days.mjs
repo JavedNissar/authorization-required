@@ -211,8 +211,8 @@ function rulebookFor(d){
   ];
   if(d>=4)base.push({date:"1971-10-22",text:"Decline the second of two drafts from one merchant on one card within one shift (split draft)."});
   if(d>=6)base.push({date:"1973-04-02",text:"Key every call into the terminal and relay its verdict."});
-  if(d>=7&&d<9)base.push({date:"1973-04-09",text:"Where terminal and desk disagree, the terminal stands."});
-  if(d>=9)base.push({date:"1973-04-23",text:"Where terminal and desk disagree, the clerk is responsible. Use judgment. (April 9 memo also in force.)"});
+  if(d>=7)base.push({date:"1973-04-09",text:"Where terminal and desk disagree, the terminal stands."});
+  if(d>=9)base.push({date:"1973-04-23",text:"Where terminal and desk disagree, the clerk is responsible. Use judgment. This instruction does not revoke April 9."});
   if(d>=12)base.push({date:"1977-02-28",text:"The card is now VISA. Chargex drafts remain valid through March."});
   return base;
 }
