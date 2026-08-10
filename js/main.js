@@ -249,7 +249,7 @@ game.on('state', async ({ state, ...detail }) => {
     }
 
     case 'DELIBERATING': {
-      desk.setPhone('hold', detail.afterCallback ? 'CALL BACK COMPLETE' : 'ON HOLD');
+      desk.setPhone('hold', detail.afterCallback ? 'INDEPENDENT CALLBACK COMPLETE' : 'ON HOLD');
       desk.subtitle(detail.afterCallback
         ? '— you have the merchant’s answer. the original line is still open. —'
         : '— the line is open. the merchant is waiting. —');
@@ -269,7 +269,7 @@ game.on('state', async ({ state, ...detail }) => {
       day.spend(20);
       desk.enable([]);
       desk.setPhone('live', 'CALLING BACK');
-      desk.transcriptAdd('— you dial the merchant back —', 'cb-mark');
+      desk.transcriptAdd('— you independently dial the merchant’s registered number —', 'cb-mark');
       const activeCall = game.call;
       for (const fragment of callbackScript(activeCall)) {
         if (game.state !== 'CALLBACK' || game.call !== activeCall) return;
