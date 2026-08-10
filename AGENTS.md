@@ -7,7 +7,7 @@ This document is the implementation handoff for coding agents working on this pr
 The game is complete and playable as a static browser release.
 
 - **Campaign:** 14 days, spanning 1971–1979
-- **Calls:** 116 deterministic merchant calls
+- **Calls:** 120 deterministic merchant calls plus a final silent shift
 - **Acts:** manual authorization, desk automation, VISA/merchant-terminal transition
 - **Runtime:** vanilla HTML, CSS, Canvas, Web Audio, ES modules, and JSON
 - **Build step:** none
@@ -17,7 +17,7 @@ The game is complete and playable as a static browser release.
 The release has been tested in headless Chromium. Content validation currently reports:
 
 ```text
-content valid: 14 days, 116 calls, 708 audio lines
+content valid: 14 days, 120 calls, 732 audio lines
 ```
 
 ## Start here
@@ -293,7 +293,7 @@ The reader uses one Canvas and a grid of document frames.
 Current frame positions:
 
 ```text
-row 0: bulletin | floor limits | account index | rules
+row 0: bulletin | floor limits | account index | rules | merchant profiles
 row 1: pulled account | memo 1 | memo 2 | memo 3
 row 2: newspaper pages
 row 3: optional late-game peripheral material
@@ -312,6 +312,7 @@ F / G           adjust focus
 4               rules
 5               first memo
 6–9             newspaper pages
+0               merchant profiles
 ```
 
 The renderer includes:
@@ -321,12 +322,12 @@ The renderer includes:
 - persistent scratches and hair
 - drifting dust and grain
 - lamp flicker tied to audio hum
-- per-day contrast decay
+- one consistent, legible film grade across all days
 - late-game carriage drift
 - blank/cut frames
 - an unlabeled overhead image of the current desk
 
-`FILM DECAY OFF` freezes the image at day-one legibility. Do not change it to remove all styling or accidentally select maximum decay.
+The fiche retains scratches, dust, grain, vignette, and lamp instability, but no longer degrades text by day and therefore needs no decay toggle.
 
 Reduced-motion preferences disable or minimize flicker, easing, drift, moving dust, animated phone indicators, and terminal typing delay.
 
@@ -408,9 +409,9 @@ If an optional clip fails to load, audio falls back to the procedural stub rathe
 
 Do not regress these features:
 
-- subtitles default on
+- subtitles permanently on
 - sound toggle
-- film-decay accessibility toggle
+- a consistent legible fiche grade
 - visible keyboard focus
 - keyboard access to every live-desk action
 - Canvas keyboard navigation
@@ -434,7 +435,7 @@ It checks, among other things:
 
 - all 14 day files
 - chronology through 1979
-- quotas and schedulability
+- quotas and schedulability, with day 14 intentionally retaining a positive quota and scheduling no calls
 - call/PAN/expiry validity
 - terminal coverage by era
 - Chargex/VISA branding
@@ -475,7 +476,7 @@ The smoke test expects system Chromium at `/usr/bin/chromium` and a local server
 - deterministic code readback
 - fiche keyboard navigation
 - Act II terminal output
-- final-day decay
+- final-day fixed film treatment
 - HTTP and browser console errors
 
 ## Packaging
@@ -514,7 +515,7 @@ unzip -l dist/authorization-required.zip
 
 ## Known limitation
 
-No rendered voice-acting files are included. The game ships a procedural telephone murmur, complete default-on subtitles, and a 708-entry TTS manifest. This was an explicit jam-scope decision; the runtime already supports drop-in rendered clips.
+No rendered voice-acting files are included. The game ships a procedural telephone murmur, permanently visible subtitles, and a 732-entry TTS manifest. This was an explicit jam-scope decision; the runtime already supports drop-in rendered clips.
 
 ## Safe extension checklist
 
