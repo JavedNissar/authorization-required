@@ -61,9 +61,42 @@ function bind() {
     requestAnimationFrame(tick);
   };
 
+  document.addEventListener('keydown', handleDeskKey, true);
+
   // Unlock audio on either pointer or keyboard use; no permission prompt.
   document.addEventListener('pointerdown', () => audio.initAudio().catch(() => {}), { once: true });
   document.addEventListener('keydown', () => audio.initAudio().catch(() => {}), { once: true });
+}
+
+function handleDeskKey(e) {
+  if (!running || dayEnding || e.repeat || e.metaKey || e.ctrlKey || e.altKey) return;
+
+  const key = e.key.toLowerCase();
+  if (game.state === 'CODE_READBACK' && /^[1-6]$/.test(key)) {
+    e.preventDefault();
+    e.stopPropagation();
+    desk.pickCode(Number(key) - 1);
+    return;
+  }
+  if (['INPUT', 'TEXTAREA', 'SELECT', 'BUTTON'].includes(e.target.tagName)) return;
+
+  if (game.state === 'RINGING' && (key === ' ' || key === 'p')) {
+    e.preventDefault();
+    e.stopPropagation();
+    game.pickup();
+  } else if (game.state === 'DELIBERATING' && key === 'a') {
+    e.preventDefault();
+    e.stopPropagation();
+    game.approve();
+  } else if (game.state === 'DELIBERATING' && key === 'd') {
+    e.preventDefault();
+    e.stopPropagation();
+    game.decline();
+  } else if (game.state === 'DELIBERATING' && key === 'c' && game.callbackCount === 0) {
+    e.preventDefault();
+    e.stopPropagation();
+    game.callback();
+  }
 }
 
 function flipToggle(btn, label, apply) {

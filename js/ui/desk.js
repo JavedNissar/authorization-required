@@ -56,6 +56,10 @@ export class Desk {
     this.$('readback').classList.remove('hidden');
     grid.querySelector('button')?.focus();
   }
+  pickCode(index) {
+    const choices = this.$('code-grid').querySelectorAll('button');
+    choices[index]?.click();
+  }
   hideReadback() { this.$('readback').classList.add('hidden'); }
 
   setMemos(memos) {

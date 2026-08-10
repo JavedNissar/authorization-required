@@ -32,6 +32,9 @@ Query parameters used for testing:
 - **F / G:** focus
 - **1–9:** jump to bulletin, floor limits, pulled account, rules, memo, and paper pages
 - **0:** jump to merchant profiles (registered name, owner/contact, and category)
+- **Space:** pick up a ringing call
+- **A / D / C:** approve, decline, or call back while the line is on hold
+- **1–6:** select an authorization code while the readback panel is open
 - **Tab / Enter:** live-desk controls
 
 Subtitles remain visible, and a written transcript of each call stays on the desk until the next one rings. Sound can be disabled from the top bar. The fiche keeps a consistent, legible film treatment throughout the campaign. Reduced-motion preferences disable carriage easing, drift, moving dust, lamp flicker, and terminal typing delay.

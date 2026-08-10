@@ -44,6 +44,7 @@ html,body{margin:0;height:100%;background:var(--desk);color:var(--bone);font-fam
 #terminal{background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 3px)}
 #actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .act{font:inherit;font-weight:700;padding:12px 0;border-radius:4px;border:1px solid #4a3f2c;background:#241d14;color:var(--bone);cursor:pointer;letter-spacing:1px}
+.act kbd{font:10px var(--f-type);opacity:.65;border:1px solid #665b47;border-radius:2px;padding:1px 3px;margin-left:4px}
 .act:disabled{opacity:.3;cursor:default}
 .approve:not(:disabled):hover{background:#30291d;border-color:#7a6a4a}
 .decline:not(:disabled):hover{background:#35251d;border-color:#765646}
