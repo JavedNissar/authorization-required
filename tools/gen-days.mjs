@@ -196,7 +196,7 @@ function memosFor(d){
     8:[{date:"1973-04-16",from:"BRANCH MANAGER",subject:"PERSONAL — RENT",sig:"— R.P.",text:"Your pay is unchanged this quarter while the rooming-house rate has gone up again. The staff Chargex deduction remains attached to card 4490-0017-2231. Head office does not consider either item a systems matter."}],
     9:[{date:"1973-04-23",from:"HEAD OFFICE",subject:"RE: RE: TERMINAL VERDICTS",sig:"— E.M., SYSTEMS",text:"Contrary to the memo of April 9, clerks remain responsible for declined fraud. Use judgment. The system is a tool. / This memo and the April 9 memo are both in force."}],
     11:[{date:"1973-05-07",from:"ACCOUNTS",subject:"STAFF CHARGEX STATEMENT",sig:"— ACCOUNTS",text:"For payroll deduction: your staff Chargex account 4490-0017-2231 remains open. Current balance $38.14. No action is required."}],
-    12:[{date:"1977-02-28",from:"HEAD OFFICE",subject:"VISA",sig:"— E.M.",text:"Effective March, Chargex is retired. All cards, drafts and signage are reissued under the name VISA. The name was chosen to imply no nationality and to be easy to say in any language. Treat this as a routine rebrand."}],
+    12:[{date:"1977-02-28",from:"HEAD OFFICE",subject:"VISA",sig:"— E.M.",text:"Effective March, Chargex is retired. All cards, drafts and signage are reissued under the name VISA. The name was chosen to imply no nationality and to be easy to say in any language. This is a routine rebrand; telephone authorization volume and quotas are unchanged."}],
     13:[{date:"1979-04-02",from:"HEAD OFFICE",subject:"MERCHANT TERMINALS",sig:"— E.M., SYSTEMS",text:"Merchant terminals are being installed across the region. Call volume will decline. Calls that still reach the desk are those the machine declined to handle. Continue as normal."}]
   };
   return m[d]||[];
@@ -269,7 +269,7 @@ const BULLETIN_NO={2:"№ 41",3:"№ 42",4:"№ 43",5:"№ 43",6:"№ 12",7:"№
 for(let d=2;d<=14;d++){
   const r=rng(1971+d*977);
   const act=ACT(d);
-  const quotas={2:6,3:7,4:8,5:9,6:10,7:11,8:12,9:12,10:12,11:12,12:5,13:4,14:3};
+  const quotas={2:6,3:7,4:8,5:9,6:10,7:11,8:12,9:12,10:12,11:12,12:12,13:4,14:3};
   const quota=quotas[d];
   const mundane=mundaneCalls(r,d,Math.max(0,quota-(BEATS[d]?.calls.length||0)));
   const all=[...mundane.map(c=>materialize(r,d,c)),...(BEATS[d]?.calls||[]).map(c=>materialize(r,d,c))];
@@ -279,7 +279,7 @@ for(let d=2;d<=14;d++){
   }
   const data={
     day:d,date:DATES[d],quota,endMinutes:act===3?960:1020,
-    brief:act===1?"Paper and the fiche. The bulletin is only as new as the ferry.":act===2?"The terminal is live. Key the number and read its verdict back.":"VISA. Merchant terminals now handle most charges. A few calls still reach the desk.",
+    brief:act===1?"Paper and the fiche. The bulletin is only as new as the ferry.":act===2?"The terminal is live. Key the number and read its verdict back.":d===12?"VISA replaces Chargex. Telephone authorization volume is unchanged.":"Merchant terminals now handle most charges. Only exceptions still reach the desk.",
     epilogue:epilogueFor(d),
     bulletin:{edition:BULLETIN_NO[d],date:BULLETIN_DATES[d]},
     memos:memosFor(d),rulebook:rulebookFor(d),

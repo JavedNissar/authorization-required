@@ -3825,7 +3825,7 @@
     },
     {
       "id": "d12g0.pan",
-      "text": "Card number 4 2 3 0 6 9 7 9 8 6 6 5. Expires 07/78. Name on the card, G. PUMPHREY.",
+      "text": "Card number 4 5 6 7 9 6 0 2 1 3 8 8. Expires 06/80. Name on the card, G. PUMPHREY.",
       "speaker": "lighthouse",
       "emotion": "businesslike"
     },
@@ -3861,7 +3861,7 @@
     },
     {
       "id": "d12g1.pan",
-      "text": "Card number 4 2 8 7 1 1 7 5 5 7 5 2. Expires 06/80. Name on the card, J. CLOUTER.",
+      "text": "Card number 4 5 0 6 1 6 2 5 2 6 4 1. Expires 12/78. Name on the card, J. CLOUTER.",
       "speaker": "laundro",
       "emotion": "businesslike"
     },
@@ -3897,7 +3897,7 @@
     },
     {
       "id": "d12g2.pan",
-      "text": "Card number 4 3 7 3 6 9 3 6 9 2 6 7. Expires 11/79. Name on the card, M. TRASK.",
+      "text": "Card number 4 1 5 6 6 7 6 1 8 3 6 0. Expires 07/81. Name on the card, M. TRASK.",
       "speaker": "jeweler",
       "emotion": "businesslike"
     },
@@ -3920,6 +3920,258 @@
       "emotion": "guarded"
     },
     {
+      "id": "d12g3.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g3.ident",
+      "text": "Lighthouse Service Station here. I have a VISA charge that needs authorization.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g3.pan",
+      "text": "Card number 4 3 1 6 2 9 1 3 0 2 6 3. Expires 11/81. Name on the card, G. PUMPHREY.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g3.amt",
+      "text": "Amount is 51 dollars.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g3.close",
+      "text": "The customer is waiting.",
+      "speaker": "lighthouse",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g3.cb",
+      "text": "You ring back. Lighthouse Service Station confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "lighthouse.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12g4.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g4.ident",
+      "text": "Snow's Chemist Shop here. I have a VISA charge that needs authorization.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g4.pan",
+      "text": "Card number 4 4 1 9 6 8 5 1 2 4 0 2. Expires 03/76. Name on the card, H. SNOW.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g4.amt",
+      "text": "Amount is 47 dollars and 93 cents.",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g4.close",
+      "text": "Could you give us a number?",
+      "speaker": "chemist",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g4.cb",
+      "text": "You ring back. Snow's Chemist Shop confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "chemist.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12g5.greet",
+      "text": "Hello there, bank.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g5.ident",
+      "text": "The Salt Box Café here. I have a VISA charge that needs authorization.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g5.pan",
+      "text": "Card number 4 8 4 3 7 3 9 4 6 8 6 7. Expires 02/79. Name on the card, D. LODER.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g5.amt",
+      "text": "Amount is 45 dollars and 94 cents.",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g5.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "saltbox",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g5.cb",
+      "text": "You ring back. The Salt Box Café confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "saltbox.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12g6.greet",
+      "text": "Good morning, bank?",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g6.ident",
+      "text": "Holloway Furniture here. I have a VISA charge that needs authorization.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g6.pan",
+      "text": "Card number 4 7 2 5 8 6 6 1 2 2 9 0. Expires 03/79. Name on the card, B. HOLLOWAY.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g6.amt",
+      "text": "Amount is 76 dollars and 34 cents.",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g6.close",
+      "text": "What do you say?",
+      "speaker": "furniture",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g6.cb",
+      "text": "You ring back. Holloway Furniture confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "furniture.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12g7.greet",
+      "text": "Good afternoon, bank.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g7.ident",
+      "text": "Liquor Store here. I have a VISA charge that needs authorization.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g7.pan",
+      "text": "Card number 4 1 4 7 3 0 3 7 4 9 8 7. Expires 04/76. Name on the card, J. STAGG.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g7.amt",
+      "text": "Amount is 49 dollars and 47 cents.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g7.close",
+      "text": "The customer is waiting.",
+      "speaker": "liquor",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g7.cb",
+      "text": "You ring back. Liquor Store confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "liquor.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12g8.greet",
+      "text": "Hello, bank? Is that you?",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g8.ident",
+      "text": "Marquee Hardware here. I have a VISA charge that needs authorization.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g8.pan",
+      "text": "Card number 4 7 5 3 2 1 3 9 6 7 6 7. Expires 08/78. Name on the card, E. MARCHE.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g8.amt",
+      "text": "Amount is 38 dollars and 17 cents.",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g8.close",
+      "text": "Could you give us a number?",
+      "speaker": "marquee",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g8.cb",
+      "text": "You ring back. Marquee Hardware confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "marquee.callback",
+      "emotion": "guarded"
+    },
+    {
+      "id": "d12g9.greet",
+      "text": "Hello there, bank.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g9.ident",
+      "text": "Crown & Anchor Tavern here. I have a VISA charge that needs authorization.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g9.pan",
+      "text": "Card number 4 6 0 2 3 1 7 6 3 4 5 2. Expires 09/76. Name on the card, V. BARBOUR.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g9.amt",
+      "text": "Amount is 51 dollars and 93 cents.",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g9.close",
+      "text": "Can you give me a code for that?",
+      "speaker": "crown",
+      "emotion": "businesslike"
+    },
+    {
+      "id": "d12g9.cb",
+      "text": "You ring back. Crown & Anchor Tavern confirms the charge, a little put out. “It is all regular. Run it through.”",
+      "speaker": "crown.callback",
+      "emotion": "guarded"
+    },
+    {
       "id": "d12beat1.greet",
       "text": "Hello, bank? Is that you?",
       "speaker": "crown",
@@ -3933,7 +4185,7 @@
     },
     {
       "id": "d12beat1.pan",
-      "text": "Card number 4 8 1 5 0 5 2 6 3 5 7 7. Expires 05/81. Name on the card, V. BARBOUR.",
+      "text": "Card number 4 9 3 6 2 2 7 2 9 4 6 3. Expires 08/81. Name on the card, V. BARBOUR.",
       "speaker": "crown",
       "emotion": "businesslike"
     },
@@ -3969,7 +4221,7 @@
     },
     {
       "id": "d12beat2.pan",
-      "text": "Card number 4 1 3 5 2 5 9 3 5 8 4 6. Expires 07/81. Name on the card, G. DOYLE.",
+      "text": "Card number 4 1 3 8 0 5 2 4 6 8 3 8. Expires 10/81. Name on the card, G. DOYLE.",
       "speaker": "emporium",
       "emotion": "businesslike"
     },

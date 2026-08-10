@@ -1,9 +1,9 @@
 {
  "day": 12,
  "date": "1977-03-07",
- "quota": 5,
+ "quota": 12,
  "endMinutes": 960,
- "brief": "VISA. Merchant terminals now handle most charges. A few calls still reach the desk.",
+ "brief": "VISA replaces Chargex. Telephone authorization volume is unchanged.",
  "epilogue": "VISA. Easy to say in any language, belonging to no place.",
  "bulletin": {
   "edition": "№ 8",
@@ -15,7 +15,7 @@
    "from": "HEAD OFFICE",
    "subject": "VISA",
    "sig": "— E.M.",
-   "text": "Effective March, Chargex is retired. All cards, drafts and signage are reissued under the name VISA. The name was chosen to imply no nationality and to be easy to say in any language. Treat this as a routine rebrand."
+   "text": "Effective March, Chargex is retired. All cards, drafts and signage are reissued under the name VISA. The name was chosen to imply no nationality and to be easy to say in any language. This is a routine rebrand; telephone authorization volume and quotas are unchanged."
   }
  ],
  "rulebook": [
@@ -62,8 +62,8 @@
    "merchant": "lighthouse",
    "brand": "VISA",
    "card": {
-    "pan": "4230-6979-8665",
-    "exp": "07/78",
+    "pan": "4567-9602-1388",
+    "exp": "06/80",
     "name": "G. PUMPHREY"
    },
    "amount": 43.53,
@@ -81,8 +81,8 @@
    "merchant": "laundro",
    "brand": "VISA",
    "card": {
-    "pan": "4287-1175-5752",
-    "exp": "06/80",
+    "pan": "4506-1625-2641",
+    "exp": "12/78",
     "name": "J. CLOUTER"
    },
    "amount": 31.94,
@@ -100,8 +100,8 @@
    "merchant": "jeweler",
    "brand": "VISA",
    "card": {
-    "pan": "4373-6936-9267",
-    "exp": "11/79",
+    "pan": "4156-6761-8360",
+    "exp": "07/81",
     "name": "M. TRASK"
    },
    "amount": 177.73,
@@ -116,12 +116,147 @@
    "note": ""
   },
   {
+   "id": "d12g3",
+   "merchant": "lighthouse",
+   "brand": "VISA",
+   "card": {
+    "pan": "4316-2913-0263",
+    "exp": "11/81",
+    "name": "G. PUMPHREY"
+   },
+   "amount": 51,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d12g4",
+   "merchant": "chemist",
+   "brand": "VISA",
+   "card": {
+    "pan": "4419-6851-2402",
+    "exp": "03/76",
+    "name": "H. SNOW"
+   },
+   "amount": 47.93,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d12g5",
+   "merchant": "saltbox",
+   "brand": "VISA",
+   "card": {
+    "pan": "4843-7394-6867",
+    "exp": "02/79",
+    "name": "D. LODER"
+   },
+   "amount": 45.94,
+   "correct": "approve",
+   "terminalVerdict": "approve",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false
+   },
+   "note": ""
+  },
+  {
+   "id": "d12g6",
+   "merchant": "furniture",
+   "brand": "VISA",
+   "card": {
+    "pan": "4725-8661-2290",
+    "exp": "03/79",
+    "name": "B. HOLLOWAY"
+   },
+   "amount": 76.34,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "underFloor": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d12g7",
+   "merchant": "liquor",
+   "brand": "VISA",
+   "card": {
+    "pan": "4147-3037-4987",
+    "exp": "04/76",
+    "name": "J. STAGG"
+   },
+   "amount": 49.47,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d12g8",
+   "merchant": "marquee",
+   "brand": "VISA",
+   "card": {
+    "pan": "4753-2139-6767",
+    "exp": "08/78",
+    "name": "E. MARCHE"
+   },
+   "amount": 38.17,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": false,
+    "underFloor": true
+   },
+   "note": ""
+  },
+  {
+   "id": "d12g9",
+   "merchant": "crown",
+   "brand": "VISA",
+   "card": {
+    "pan": "4602-3176-3452",
+    "exp": "09/76",
+    "name": "V. BARBOUR"
+   },
+   "amount": 51.93,
+   "correct": "decline",
+   "terminalVerdict": "decline",
+   "truth": {
+    "bulletinHit": false,
+    "accountOK": true,
+    "expired": true
+   },
+   "note": ""
+  },
+  {
    "id": "d12beat1",
    "merchant": "crown",
    "brand": "VISA",
    "card": {
-    "pan": "4815-0526-3577",
-    "exp": "05/81",
+    "pan": "4936-2272-9463",
+    "exp": "08/81",
     "name": "V. BARBOUR"
    },
    "amount": 58,
@@ -139,8 +274,8 @@
    "merchant": "emporium",
    "brand": "VISA",
    "card": {
-    "pan": "4135-2593-5846",
-    "exp": "07/81",
+    "pan": "4138-0524-6838",
+    "exp": "10/81",
     "name": "G. DOYLE"
    },
    "amount": 61,
@@ -237,8 +372,12 @@
      "body": "Cardholders are advised that Chargex cards will be reissued under the name VISA beginning in March. Merchant forms and signs will be replaced. There is no change to card accounts. The new name is intended to be easy to say in any language."
     },
     {
-     "head": "CHURCH NOTES",
-     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+     "head": "CBC RADIO",
+     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
     },
     {
      "head": "BIRTHS",
@@ -246,7 +385,7 @@
     },
     {
      "kind": "blank",
-     "h": 131
+     "h": 104
     }
    ]
   },
@@ -260,12 +399,20 @@
    "cols": 3,
    "items": [
     {
-     "head": "FISHERIES REPORT",
-     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
     },
     {
      "head": "SHIPPING NEWS",
      "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
     },
     {
      "kind": "blank",
@@ -283,16 +430,24 @@
    "cols": 3,
    "items": [
     {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+    },
+    {
      "head": "CARD OF THANKS",
      "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
     },
     {
-     "head": "HOSPITAL NOTES",
-     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
-    },
-    {
      "kind": "blank",
-     "h": 132
+     "h": 167
     }
    ]
   }
