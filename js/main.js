@@ -269,6 +269,10 @@ game.on('state', async ({ state, ...detail }) => {
       desk.subtitle('');
       desk.logline(messages[detail.outcome] || '');
       updatePay();
+      if (day.done && game.handled >= day.data.quota) {
+        endDay();
+        break;
+      }
       if (!day.over) day.armNext();
       fiche.cv.focus();
       break;
