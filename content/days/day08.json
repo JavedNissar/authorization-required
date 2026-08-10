@@ -366,27 +366,39 @@
     },
     {
      "head": "CBC RADIO",
-     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+     "body": "MONDAY — 6:30 The World This Morning; 7:00 News and Weather; 7:20 Fisheries Broadcast; 12:00 Midday; 4:30 Young Canada; 6:00 National News; 7:30 Regional Report; 8:00 Assignment. SATURDAY — 7:30 Hockey Night in Canada. Times are subject to change for special bulletins."
     },
     {
      "head": "SHIPPING NEWS",
-     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+     "body": "The M.V. Northern Gull maintains its regular schedule, weather permitting, and carried mail and mixed freight on Thursday's crossing. Freight for the mainland should be at the dock one hour before departure and plainly marked. The coaster Brent H. is expected with coal early next week, subject to berth availability."
     },
     {
      "head": "LEGION NOTES",
-     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+     "body": "The branch meets Wednesday at 8 p.m. The dart league standings and Saturday cribbage draw are posted in the hall. Members are reminded that annual dues are payable to the secretary before month end. The Ladies' Auxiliary will receive preserves for its autumn table Friday afternoon."
     },
     {
      "head": "WEATHER",
-     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+     "body": "Fog mornings, clearing toward noon most days. Wind northeast, moderate, becoming fresh over open water late Wednesday. Temperatures will remain near the seasonal average with rain overnight Thursday. Crossings are on schedule unless otherwise posted on the wharf board. Small craft operators are advised to listen for updates."
     },
     {
      "head": "CLASSIFIED",
-     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+     "body": "FOR SALE — cords of split birch, stove length, delivered within town limits. WANTED — girl for counter work, Friday evenings and weekends; references requested. FOUND — man's wool glove at the ferry landing after Tuesday's crossing. Inquire at this office. Notices are 25 cents for the first three lines."
     },
     {
      "head": "HOCKEY",
-     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away after the return crossing was delayed. Two goals in the home fixture came from the junior line. Attendance was good considering the weather. Practice resumes Tuesday if the arena compressor is repaired."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted this week: Mr. O. Higgins and Mrs. B. Barnes. Discharged: Mrs. N. Drodge, Mr. A. Gosse and Master T. Vatcher. Visitors are received from 2–4 and 7–8 p.m. daily. The auxiliary requests clean glass jars for the spring pantry drive; leave them at the clinic."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs after the harbourmaster reported play in the main bearing. The clerk was directed to obtain three written prices before the next meeting. A request for another street lamp near the clinic was referred to works. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings remained steady for the season, with cod and squid making up most deliveries at the government wharf. Buyers reported prices unchanged. Several crews stayed in Saturday to mend gear after the northeast wind. The plant advises that the Saturday shift stands and workers should consult the notice board."
     }
    ]
   },
@@ -400,32 +412,44 @@
    "cols": 3,
    "items": [
     {
-     "head": "HOCKEY",
-     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
-    },
-    {
-     "head": "COUNCIL NOTES",
-     "body": "Council heard the wharf crane requires $900 in repairs. The clerk was directed to obtain three prices. The matter of dogs running at large was deferred."
-    },
-    {
      "head": "SHIPPING NEWS",
-     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
-    },
-    {
-     "head": "HOSPITAL NOTES",
-     "body": "Admitted: Mr. O. Higgins. Discharged: Mrs. N. Drodge, Mr. A. Gosse. Visitors 2–4 and 7–8."
+     "body": "The M.V. Northern Gull maintains its regular schedule, weather permitting, and carried mail and mixed freight on Thursday's crossing. Freight for the mainland should be at the dock one hour before departure and plainly marked. The coaster Brent H. is expected with coal early next week, subject to berth availability."
     },
     {
      "head": "CBC RADIO",
-     "body": "6:30 The World This Morning. 7:20 Fisheries Broadcast. 12:00 Midday. 18:00 News. 19:30 Hockey Night in Canada."
+     "body": "MONDAY — 6:30 The World This Morning; 7:00 News and Weather; 7:20 Fisheries Broadcast; 12:00 Midday; 4:30 Young Canada; 6:00 National News; 7:30 Regional Report; 8:00 Assignment. SATURDAY — 7:30 Hockey Night in Canada. Times are subject to change for special bulletins."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted this week: Mr. O. Higgins and Mrs. B. Barnes. Discharged: Mrs. N. Drodge, Mr. A. Gosse and Master T. Vatcher. Visitors are received from 2–4 and 7–8 p.m. daily. The auxiliary requests clean glass jars for the spring pantry drive; leave them at the clinic."
     },
     {
      "head": "CLASSIFIED",
-     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+     "body": "FOR SALE — cords of split birch, stove length, delivered within town limits. WANTED — girl for counter work, Friday evenings and weekends; references requested. FOUND — man's wool glove at the ferry landing after Tuesday's crossing. Inquire at this office. Notices are 25 cents for the first three lines."
+    },
+    {
+     "head": "FISHERIES REPORT",
+     "body": "Landings remained steady for the season, with cod and squid making up most deliveries at the government wharf. Buyers reported prices unchanged. Several crews stayed in Saturday to mend gear after the northeast wind. The plant advises that the Saturday shift stands and workers should consult the notice board."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing toward noon most days. Wind northeast, moderate, becoming fresh over open water late Wednesday. Temperatures will remain near the seasonal average with rain overnight Thursday. Crossings are on schedule unless otherwise posted on the wharf board. Small craft operators are advised to listen for updates."
+    },
+    {
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs after the harbourmaster reported play in the main bearing. The clerk was directed to obtain three written prices before the next meeting. A request for another street lamp near the clinic was referred to works. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away after the return crossing was delayed. Two goals in the home fixture came from the junior line. Attendance was good considering the weather. Practice resumes Tuesday if the arena compressor is repaired."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday at 8 p.m. The dart league standings and Saturday cribbage draw are posted in the hall. Members are reminded that annual dues are payable to the secretary before month end. The Ladies' Auxiliary will receive preserves for its autumn table Friday afternoon."
     },
     {
      "head": "CARD OF THANKS",
-     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement, including those who sent food, flowers, cards and messages, provided cars, or called at the house. Special thanks are extended to the crew of the Northern Gull and to the staff at the clinic."
     }
    ]
   },
@@ -439,28 +463,44 @@
    "cols": 3,
    "items": [
     {
-     "head": "CHURCH NOTES",
-     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+     "head": "FISHERIES REPORT",
+     "body": "Landings remained steady for the season, with cod and squid making up most deliveries at the government wharf. Buyers reported prices unchanged. Several crews stayed in Saturday to mend gear after the northeast wind. The plant advises that the Saturday shift stands and workers should consult the notice board."
     },
     {
-     "head": "LEGION NOTES",
-     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+     "head": "CBC RADIO",
+     "body": "MONDAY — 6:30 The World This Morning; 7:00 News and Weather; 7:20 Fisheries Broadcast; 12:00 Midday; 4:30 Young Canada; 6:00 National News; 7:30 Regional Report; 8:00 Assignment. SATURDAY — 7:30 Hockey Night in Canada. Times are subject to change for special bulletins."
     },
     {
-     "head": "WEATHER",
-     "body": "Fog mornings, clearing by noon most days. Wind northeast, moderate. Crossings on schedule unless noted on the wharf board."
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement, including those who sent food, flowers, cards and messages, provided cars, or called at the house. Special thanks are extended to the crew of the Northern Gull and to the staff at the clinic."
     },
     {
      "head": "HOCKEY",
-     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away. Attendance was good considering the weather."
-    },
-    {
-     "head": "SHIPPING NEWS",
-     "body": "The M.V. Northern Gull maintains schedule, weather permitting. Freight for the crossing should be at the dock one hour ahead."
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away after the return crossing was delayed. Two goals in the home fixture came from the junior line. Attendance was good considering the weather. Practice resumes Tuesday if the arena compressor is repaired."
     },
     {
      "head": "CLASSIFIED",
-     "body": "FOR SALE — cords of split birch, delivered. WANTED — girl for counter work, weekends. FOUND — man's glove at the ferry landing. Inquire this office."
+     "body": "FOR SALE — cords of split birch, stove length, delivered within town limits. WANTED — girl for counter work, Friday evenings and weekends; references requested. FOUND — man's wool glove at the ferry landing after Tuesday's crossing. Inquire at this office. Notices are 25 cents for the first three lines."
+    },
+    {
+     "head": "LEGION NOTES",
+     "body": "The branch meets Wednesday at 8 p.m. The dart league standings and Saturday cribbage draw are posted in the hall. Members are reminded that annual dues are payable to the secretary before month end. The Ladies' Auxiliary will receive preserves for its autumn table Friday afternoon."
+    },
+    {
+     "head": "CHURCH NOTES",
+     "body": "Sunday service begins at 11 a.m., with choir practice Thursday evening in the vestry. The UCW thanks all who contributed baking and preserves to the bazaar table. Proceeds will go toward furnace oil. Anyone able to deliver a meal to a housebound neighbour is asked to leave a name at the manse."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing toward noon most days. Wind northeast, moderate, becoming fresh over open water late Wednesday. Temperatures will remain near the seasonal average with rain overnight Thursday. Crossings are on schedule unless otherwise posted on the wharf board. Small craft operators are advised to listen for updates."
+    },
+    {
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son, at the hospital across the water. To Mr. and Mrs. R. Strickland, twin daughters, both doing well. The Women's Institute has sent baskets to both families. Notices for this column must be received at the Compass office by noon Wednesday."
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains its regular schedule, weather permitting, and carried mail and mixed freight on Thursday's crossing. Freight for the mainland should be at the dock one hour before departure and plainly marked. The coaster Brent H. is expected with coal early next week, subject to berth availability."
     }
    ]
   },
@@ -474,24 +514,44 @@
    "cols": 3,
    "items": [
     {
-     "head": "CHURCH NOTES",
-     "body": "Sunday service 11 a.m. The UCW thanks all who contributed to the bazaar table. Choir practice Thursday."
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs after the harbourmaster reported play in the main bearing. The clerk was directed to obtain three written prices before the next meeting. A request for another street lamp near the clinic was referred to works. The matter of dogs running at large was deferred."
     },
     {
-     "head": "BIRTHS",
-     "body": "To Mr. and Mrs. E. Grandin, a son. To Mr. and Mrs. R. Strickland, twin daughters. Congratulations."
+     "head": "CHURCH NOTES",
+     "body": "Sunday service begins at 11 a.m., with choir practice Thursday evening in the vestry. The UCW thanks all who contributed baking and preserves to the bazaar table. Proceeds will go toward furnace oil. Anyone able to deliver a meal to a housebound neighbour is asked to leave a name at the manse."
+    },
+    {
+     "head": "HOSPITAL NOTES",
+     "body": "Admitted this week: Mr. O. Higgins and Mrs. B. Barnes. Discharged: Mrs. N. Drodge, Mr. A. Gosse and Master T. Vatcher. Visitors are received from 2–4 and 7–8 p.m. daily. The auxiliary requests clean glass jars for the spring pantry drive; leave them at the clinic."
     },
     {
      "head": "FISHERIES REPORT",
-     "body": "Landings steady for the season. Prices unchanged. The plant advises the Saturday shift stands."
+     "body": "Landings remained steady for the season, with cod and squid making up most deliveries at the government wharf. Buyers reported prices unchanged. Several crews stayed in Saturday to mend gear after the northeast wind. The plant advises that the Saturday shift stands and workers should consult the notice board."
+    },
+    {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains its regular schedule, weather permitting, and carried mail and mixed freight on Thursday's crossing. Freight for the mainland should be at the dock one hour before departure and plainly marked. The coaster Brent H. is expected with coal early next week, subject to berth availability."
+    },
+    {
+     "head": "CBC RADIO",
+     "body": "MONDAY — 6:30 The World This Morning; 7:00 News and Weather; 7:20 Fisheries Broadcast; 12:00 Midday; 4:30 Young Canada; 6:00 National News; 7:30 Regional Report; 8:00 Assignment. SATURDAY — 7:30 Hockey Night in Canada. Times are subject to change for special bulletins."
     },
     {
      "head": "CARD OF THANKS",
-     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement."
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement, including those who sent food, flowers, cards and messages, provided cars, or called at the house. Special thanks are extended to the crew of the Northern Gull and to the staff at the clinic."
     },
     {
-     "head": "LEGION NOTES",
-     "body": "The branch meets Wednesday, 8 p.m. The dart league standings are posted. Members are reminded dues are payable."
+     "head": "BIRTHS",
+     "body": "To Mr. and Mrs. E. Grandin, a son, at the hospital across the water. To Mr. and Mrs. R. Strickland, twin daughters, both doing well. The Women's Institute has sent baskets to both families. Notices for this column must be received at the Compass office by noon Wednesday."
+    },
+    {
+     "head": "HOCKEY",
+     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away after the return crossing was delayed. Two goals in the home fixture came from the junior line. Attendance was good considering the weather. Practice resumes Tuesday if the arena compressor is repaired."
+    },
+    {
+     "head": "WEATHER",
+     "body": "Fog mornings, clearing toward noon most days. Wind northeast, moderate, becoming fresh over open water late Wednesday. Temperatures will remain near the seasonal average with rain overnight Thursday. Crossings are on schedule unless otherwise posted on the wharf board. Small craft operators are advised to listen for updates."
     }
    ]
   }
