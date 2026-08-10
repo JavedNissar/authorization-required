@@ -354,19 +354,22 @@ function endDay() {
     running = true;
     fiche.cv.focus();
     requestAnimationFrame(tick);
-  });
+  }, dayNum >= 14 ? 'REPORT NEXT DAY' : 'BEGIN NEXT DAY');
 }
 
 function showEnding() {
   const t = game.totals;
-  const ledger = `<p>The phone does not ring.</p>
+  const ledger = `<p class="notice-date">1979-04-10 · HEAD OFFICE PERSONNEL</p>
+    <p><b>NOTICE OF LAYOFF</b></p>
+    <p>Merchant terminal installation has removed the need for a staffed telephone authorization desk. Your position is eliminated effective immediately. Yesterday’s unmet quota has been entered with the closing records.</p>
+    <p>Return the desk key and identification card to the branch manager. Final commission will be included with regular pay.</p>
     <table>
       <tr><td>Total calls handled</td><td>${t.handled}</td></tr>
       <tr><td>Total commission</td><td>$${t.money.toFixed(2)}</td></tr>
       <tr><td>Losses entered in the ledger</td><td>$${t.losses.toFixed(2)}</td></tr>
       <tr><td>Complaints attached to your name</td><td>${t.complaints}</td></tr>
     </table>`;
-  desk.dayEnd('AUTHORIZATION REQUIRED', ledger, () => {
+  desk.dayEnd('POSITION ELIMINATED', ledger, () => {
     location.href = `${location.pathname}?seed=${SEED}`;
   }, 'START OVER');
 }

@@ -78,9 +78,7 @@ const BEATS={
    {id:"d13beat1",merchant:"radio",amount:88.00,kind:"decline",terminalVerdict:"decline",truthOverride:{bulletinHit:true}},
    {id:"d13beat2",merchant:"marquee",amount:120.00,kind:"address",voice:"wrong",terminalVerdict:"refer",note:"A caller who knows what the player is."}
  ]},
- 14:{calls:[
-   {id:"d14beat1",merchant:"harbor",amount:61.00,kind:"approve",fixedTime:"15:20",note:"Last call of the game. Ray Crocker, ordinary as rain."}
- ]}
+ 14:{calls:[]}
 };
 
 // Per-day newspaper front matter & mundane item pools
@@ -272,14 +270,14 @@ for(let d=2;d<=14;d++){
   const quotas={2:6,3:7,4:8,5:9,6:10,7:11,8:12,9:12,10:12,11:12,12:12,13:4,14:3};
   const quota=quotas[d];
   const mundane=mundaneCalls(r,d,Math.max(0,quota-(BEATS[d]?.calls.length||0)));
-  const all=[...mundane.map(c=>materialize(r,d,c)),...(BEATS[d]?.calls||[]).map(c=>materialize(r,d,c))];
+  const all=d===14?[]:[...mundane.map(c=>materialize(r,d,c)),...(BEATS[d]?.calls||[]).map(c=>materialize(r,d,c))];
   if(d===4){
     const first=all.find(c=>c.id==="d4beat1"),second=all.find(c=>c.id==="d4beat2");
     second.card={...first.card};
   }
   const data={
     day:d,date:DATES[d],quota,endMinutes:act===3?960:1020,
-    brief:act===1?"Paper and the fiche. The bulletin is only as new as the ferry.":act===2?"The terminal is live. Key the number and read its verdict back.":d===12?"VISA replaces Chargex. Telephone authorization volume is unchanged.":"Merchant terminals now handle most charges. Only exceptions still reach the desk.",
+    brief:act===1?"Paper and the fiche. The bulletin is only as new as the ferry.":act===2?"The terminal is live. Key the number and read its verdict back.":d===12?"VISA replaces Chargex. Telephone authorization volume is unchanged.":d===14?"Your quota remains posted. Merchant terminals are handling the calls.":"Merchant terminals now handle most charges. Only exceptions still reach the desk.",
     epilogue:epilogueFor(d),
     bulletin:{edition:BULLETIN_NO[d],date:BULLETIN_DATES[d]},
     memos:memosFor(d),rulebook:rulebookFor(d),

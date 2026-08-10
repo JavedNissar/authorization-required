@@ -21,7 +21,9 @@ for (let n = 1; n <= 14; n++) {
   const data = JSON.parse(readFileSync(`content/days/${label}.json`, 'utf8'));
   days.push(data);
   if (data.day !== n) fail(`${label}: data.day is ${data.day}`);
-  if (data.calls.length !== data.quota) fail(`${label}: ${data.calls.length} calls but quota ${data.quota}`);
+  if (n === 14) {
+    if (data.calls.length !== 0 || data.quota <= 0) fail(`${label}: final shift must have a positive quota and no calls`);
+  } else if (data.calls.length !== data.quota) fail(`${label}: ${data.calls.length} calls but quota ${data.quota}`);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(data.date)) fail(`${label}: invalid date ${data.date}`);
   if (forbidden.test(JSON.stringify(data))) fail(`${label}: forbidden real-place or excluded lore reference`);
   const expectedPages = n <= 11 ? 4 : n === 14 ? 2 : 3;
@@ -39,7 +41,7 @@ for (let n = 1; n <= 14; n++) {
       schedule.armNext();
     }
   }
-  if (scheduled < data.quota) fail(`${label}: quota cannot be met at normal deliberation pace`);
+  if (n !== 14 && scheduled < data.quota) fail(`${label}: quota cannot be met at normal deliberation pace`);
   for (const call of data.calls) {
     if (ids.has(call.id)) fail(`${label}: duplicate call id ${call.id}`);
     ids.add(call.id);

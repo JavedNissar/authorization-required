@@ -3,7 +3,7 @@
  "date": "1979-04-09",
  "quota": 3,
  "endMinutes": 960,
- "brief": "Merchant terminals now handle most charges. Only exceptions still reach the desk.",
+ "brief": "Your quota remains posted. Merchant terminals are handling the calls.",
  "epilogue": "The phone does not ring.",
  "bulletin": {
   "edition": "№ 14",
@@ -48,66 +48,7 @@
    "text": "The card is now VISA. Chargex drafts remain valid through March."
   }
  ],
- "calls": [
-  {
-   "id": "d14g0",
-   "merchant": "emporium",
-   "brand": "VISA",
-   "card": {
-    "pan": "4644-3096-1584",
-    "exp": "05/78",
-    "name": "G. DOYLE"
-   },
-   "amount": 72.36,
-   "correct": "decline",
-   "terminalVerdict": "decline",
-   "truth": {
-    "bulletinHit": false,
-    "accountOK": true,
-    "expired": true
-   },
-   "note": ""
-  },
-  {
-   "id": "d14g1",
-   "merchant": "florist",
-   "brand": "VISA",
-   "card": {
-    "pan": "4520-2408-3801",
-    "exp": "06/80",
-    "name": "P. MINORS"
-   },
-   "amount": 45.03,
-   "correct": "approve",
-   "terminalVerdict": "approve",
-   "truth": {
-    "bulletinHit": false,
-    "accountOK": true,
-    "expired": false
-   },
-   "note": ""
-  },
-  {
-   "id": "d14beat1",
-   "merchant": "harbor",
-   "fixedTime": "15:20",
-   "brand": "VISA",
-   "card": {
-    "pan": "4638-4468-6120",
-    "exp": "12/80",
-    "name": "R. CROCKER"
-   },
-   "amount": 61,
-   "correct": "approve",
-   "terminalVerdict": "approve",
-   "truth": {
-    "bulletinHit": false,
-    "accountOK": true,
-    "expired": false
-   },
-   "note": "Last call of the game. Ray Crocker, ordinary as rain."
-  }
- ],
+ "calls": [],
  "rules": [
   {
    "id": "bulletin",
@@ -190,24 +131,20 @@
      "h": 320
     },
     {
+     "head": "SHIPPING NEWS",
+     "body": "The M.V. Northern Gull maintains its regular schedule, weather permitting, and carried mail and mixed freight on Thursday's crossing. Freight for the mainland should be at the dock one hour before departure and plainly marked. The coaster Brent H. is expected with coal early next week, subject to berth availability."
+    },
+    {
      "head": "CHURCH NOTES",
      "body": "Sunday service begins at 11 a.m., with choir practice Thursday evening in the vestry. The UCW thanks all who contributed baking and preserves to the bazaar table. Proceeds will go toward furnace oil. Anyone able to deliver a meal to a housebound neighbour is asked to leave a name at the manse."
     },
     {
-     "head": "CLASSIFIED",
-     "body": "FOR SALE — cords of split birch, stove length, delivered within town limits. WANTED — girl for counter work, Friday evenings and weekends; references requested. FOUND — man's wool glove at the ferry landing after Tuesday's crossing. Inquire at this office. Notices are 25 cents for the first three lines."
-    },
-    {
-     "head": "BIRTHS",
-     "body": "To Mr. and Mrs. E. Grandin, a son, at the hospital across the water. To Mr. and Mrs. R. Strickland, twin daughters, both doing well. The Women's Institute has sent baskets to both families. Notices for this column must be received at the Compass office by noon Wednesday."
-    },
-    {
-     "head": "LEGION NOTES",
-     "body": "The branch meets Wednesday at 8 p.m. The dart league standings and Saturday cribbage draw are posted in the hall. Members are reminded that annual dues are payable to the secretary before month end. The Ladies' Auxiliary will receive preserves for its autumn table Friday afternoon."
+     "head": "CBC RADIO",
+     "body": "MONDAY — 6:30 The World This Morning; 7:00 News and Weather; 7:20 Fisheries Broadcast; 12:00 Midday; 4:30 Young Canada; 6:00 National News; 7:30 Regional Report; 8:00 Assignment. SATURDAY — 7:30 Hockey Night in Canada. Times are subject to change for special bulletins."
     },
     {
      "kind": "blank",
-     "h": 79
+     "h": 93
     }
    ]
   },
@@ -225,20 +162,20 @@
      "body": "The M.V. Northern Gull will sail Thursday, weather permitting. Freight should be at the wharf one hour before departure."
     },
     {
-     "head": "COUNCIL NOTES",
-     "body": "Council heard the wharf crane requires $900 in repairs after the harbourmaster reported play in the main bearing. The clerk was directed to obtain three written prices before the next meeting. A request for another street lamp near the clinic was referred to works. The matter of dogs running at large was deferred."
-    },
-    {
      "head": "CHURCH NOTES",
      "body": "Sunday service begins at 11 a.m., with choir practice Thursday evening in the vestry. The UCW thanks all who contributed baking and preserves to the bazaar table. Proceeds will go toward furnace oil. Anyone able to deliver a meal to a housebound neighbour is asked to leave a name at the manse."
     },
     {
-     "head": "HOCKEY",
-     "body": "The Mariners split the weekend, winning 4–1 at home and dropping a 5–3 decision away after the return crossing was delayed. Two goals in the home fixture came from the junior line. Attendance was good considering the weather. Practice resumes Tuesday if the arena compressor is repaired."
+     "head": "COUNCIL NOTES",
+     "body": "Council heard the wharf crane requires $900 in repairs after the harbourmaster reported play in the main bearing. The clerk was directed to obtain three written prices before the next meeting. A request for another street lamp near the clinic was referred to works. The matter of dogs running at large was deferred."
+    },
+    {
+     "head": "CARD OF THANKS",
+     "body": "The family wishes to thank neighbours and friends for kindness shown during their recent bereavement, including those who sent food, flowers, cards and messages, provided cars, or called at the house. Special thanks are extended to the crew of the Northern Gull and to the staff at the clinic."
     },
     {
      "kind": "blank",
-     "h": 195
+     "h": 123
     }
    ]
   }

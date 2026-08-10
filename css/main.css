@@ -76,6 +76,7 @@ html,body{margin:0;height:100%;background:var(--desk);color:var(--bone);font-fam
 #day-end-card table{width:100%;border-collapse:collapse;font-size:14px}
 #day-end-card td{padding:4px 8px;border-bottom:1px solid #c9bfa0}
 #day-end-card h3{font:700 11px var(--f-type);letter-spacing:2px;margin:18px 0 6px}
+.notice-date{font:11px var(--f-type);letter-spacing:1px;border-bottom:1px solid #c9bfa0;padding-bottom:8px}
 .adjustments{font:12px/1.45 var(--f-type);padding-left:20px}
 .adjustments li{margin-bottom:5px}
 #btn-begin,#btn-next-day{font:inherit;font-weight:700;padding:10px 20px;margin-top:14px;background:var(--ink);color:var(--bone);border:2px solid var(--ink);border-radius:3px;cursor:pointer}
