@@ -9,22 +9,13 @@ export class Desk {
     this.sub = this.$('subtitle');
     this.meta = this.$('call-meta');
     this.log = this.$('logline');
-    this.subsOn = true;
-    this.lastSubtitle = '';
   }
 
   setPhone(state, label) {
     this.phone.className = state;
     this.pstate.textContent = label ?? state.toUpperCase();
   }
-  subtitle(text) {
-    this.lastSubtitle = text;
-    this.sub.textContent = this.subsOn ? text : '';
-  }
-  setSubtitles(on) {
-    this.subsOn = on;
-    this.sub.textContent = on ? this.lastSubtitle : '';
-  }
+  subtitle(text) { this.sub.textContent = text; }
   setMeta(html) { this.meta.innerHTML = html; }
   logline(t) { this.log.textContent = t; }
 

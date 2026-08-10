@@ -51,8 +51,6 @@ function bind() {
   $('btn-callback').onclick = () => game.callback();
 
   $('btn-mute').onclick = e => flipToggle(e.currentTarget, 'SOUND', enabled => audio.setMuted(!enabled));
-  $('btn-subs').onclick = e => flipToggle(e.currentTarget, 'SUBTITLES', enabled => desk.setSubtitles(enabled));
-  $('btn-decay').onclick = e => flipToggle(e.currentTarget, 'FILM DECAY', enabled => { fiche.decayOn = enabled; });
 
   $('btn-begin').onclick = async () => {
     $('intro').classList.add('hidden');

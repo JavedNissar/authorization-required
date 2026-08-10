@@ -1,9 +1,10 @@
-// Microfiche reader: frame grid, carriage movement, film decay composite.
-// 2D canvas stack: render frame → decay grade → vignette/grain/scratches/flicker.
+// Microfiche reader: frame grid, carriage movement, fixed film composite.
+// 2D canvas stack: render frame → film grade → vignette/grain/scratches/flicker.
 
 import { rng } from '../engine/rng.js';
 
 const FRAME_W = 760, FRAME_H = 520, GAP = 60;
+const FILM_GRADE = 0.12;
 
 export class Fiche {
   constructor(canvas) {
@@ -13,7 +14,6 @@ export class Fiche {
     this.camX = 0; this.camY = 0; this.tx = 0; this.ty = 0;
     this.zoom = 1;
     this.day = 1;
-    this.decayOn = true;
     this.flicker = 1;
     this.focus = 1; // 0..1 player knob
     this.reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -129,14 +129,11 @@ export class Fiche {
     requestAnimationFrame(tt => this.loop(tt));
   }
 
-  decay() {
-    if (!this.decayOn) return 1 / 14; // accessibility setting: freeze at day-one legibility
-    return Math.min(1, this.day / 14);
-  }
-
   render(t) {
     const c = this.cx, W = this.cv.width, H = this.cv.height;
-    const d = this.decay();
+    // Keep one restrained grade for the whole campaign. Narrative escalation
+    // must not make mechanically necessary records harder to read.
+    const d = FILM_GRADE;
     const lamp = 0.75 + 0.25 * this.flicker;
     // lens interior: warm bone of projector lamp
     c.fillStyle = `rgb(${Math.floor(40*lamp)},${Math.floor(36*lamp)},${Math.floor(28*lamp)})`;
@@ -198,15 +195,13 @@ export class Fiche {
     c.beginPath(); c.moveTo(W * 0.02, H * 0.2);
     c.quadraticCurveTo(W * 0.05, H * 0.5, W * 0.03, H * 0.85); c.stroke();
 
-    // grain
-    if (d > 0.15) {
-      const n = Math.floor(200 * d);
-      c.fillStyle = `rgba(0,0,0,${0.05 * d})`;
-      for (let i = 0; i < n; i++) {
-        const gx = this.reduced ? ((i * 79 + this.day * 31) % W) : Math.random() * W;
-        const gy = this.reduced ? ((i * 43 + this.day * 17) % H) : Math.random() * H;
-        c.fillRect(gx, gy, 1.5, 1.5);
-      }
+    // restrained grain; density and contrast no longer increase by day
+    const n = 32;
+    c.fillStyle = 'rgba(0,0,0,0.006)';
+    for (let i = 0; i < n; i++) {
+      const gx = this.reduced ? ((i * 79 + this.day * 31) % W) : Math.random() * W;
+      const gy = this.reduced ? ((i * 43 + this.day * 17) % H) : Math.random() * H;
+      c.fillRect(gx, gy, 1.5, 1.5);
     }
     // focus softness
     if (this.focus < 0.9) {

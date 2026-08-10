@@ -44,7 +44,7 @@ await act2.waitForFunction(() => /APPROVED|DECLINE|REFER/.test(document.getEleme
 console.log('✓ Act II terminal verdict:', (await act2.textContent('#term-text')).trim().split('\n').at(-1));
 await act2.screenshot({ path: '/tmp/charge-jam-act2.png' });
 
-// Worst-case visual frame: final-day decay must remain readable.
+// Final-day visual frame: the fixed film treatment must remain readable.
 const final = await browser.newPage({ viewport: { width: 1280, height: 800 } });
 final.on('pageerror', e => errors.push(`FINAL PAGEERROR: ${e.message}`));
 await final.goto('http://localhost:8642/index.html?seed=1971&day=14');
@@ -53,7 +53,7 @@ await final.click('#fiche');
 await final.keyboard.press('1');
 await final.waitForTimeout(600);
 await final.screenshot({ path: '/tmp/charge-jam-day14.png' });
-console.log('✓ final-day decay rendered');
+console.log('✓ final-day fixed film treatment rendered');
 
 console.log(errors.length ? `ERRORS:\n${errors.join('\n')}` : 'NO ERRORS');
 await browser.close();

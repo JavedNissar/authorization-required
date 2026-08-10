@@ -33,7 +33,7 @@ Query parameters used for testing:
 - **1–9:** jump to bulletin, floor limits, pulled account, rules, memo, and paper pages
 - **Tab / Enter:** live-desk controls
 
-Subtitles default on, and a written transcript of each call stays on the desk until the next one rings. Sound and progressive film decay can be disabled from the top bar. Reduced-motion preferences disable carriage easing, drift, moving dust, lamp flicker, and terminal typing delay.
+Subtitles remain visible, and a written transcript of each call stays on the desk until the next one rings. Sound can be disabled from the top bar. The fiche keeps a consistent, legible film treatment throughout the campaign. Reduced-motion preferences disable carriage easing, drift, moving dust, lamp flicker, and terminal typing delay.
 
 ## Content tools
 
