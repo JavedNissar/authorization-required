@@ -10,10 +10,14 @@
 <body>
 <div id="app">
   <header id="topbar">
-    <div id="clock" aria-live="off">08:00</div>
-    <div id="daylabel">DAY 1</div>
-    <div id="quota">QUOTA 0/0</div>
-    <div id="pay">$0.00</div>
+    <div id="clock" class="metric" tabindex="0" data-label="SHIFT TIME" aria-label="Shift time 08:00" aria-live="off">08:00</div>
+    <div id="daylabel" class="metric" tabindex="0" data-label="SHIFT DATE">DAY 1</div>
+    <div id="quota" class="metric" tabindex="0" data-label="CALLS HANDLED / QUOTA">QUOTA 0/0</div>
+    <div id="pay" aria-label="Shift results">
+      <span id="commission" class="metric" tabindex="0" data-label="COMMISSION" aria-label="Commission 0 dollars">$0.00</span>
+      <span id="complaints" class="metric" tabindex="0" data-label="COMPLAINTS" aria-label="0 complaints">✗0</span>
+      <span id="losses" class="metric" tabindex="0" data-label="FRAUD LOSSES" aria-label="Fraud losses 0 dollars">−$0.00</span>
+    </div>
     <button type="button" id="btn-mute" class="chip" aria-pressed="true">SOUND ON</button>
   </header>
 

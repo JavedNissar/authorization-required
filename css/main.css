@@ -10,7 +10,11 @@ html,body{margin:0;height:100%;background:var(--desk);color:var(--bone);font-fam
 #topbar{display:flex;gap:14px;align-items:center;padding:6px 14px;background:var(--desk-edge);border-bottom:1px solid #3a3024;font-size:13px}
 #clock{font-size:20px;font-weight:700;letter-spacing:2px}
 #daylabel{opacity:.8}
-#pay{margin-left:auto}
+#pay{margin-left:auto;display:flex;gap:14px;align-items:center}
+.metric{position:relative;white-space:nowrap}
+.metric::after{content:attr(data-label);position:absolute;z-index:5;left:50%;top:calc(100% + 8px);transform:translateX(-50%);padding:5px 7px;background:var(--paper);color:var(--ink);border:1px solid #8f8266;border-radius:2px;font:700 10px var(--f-type);letter-spacing:1px;pointer-events:none;opacity:0;visibility:hidden;transition:opacity .1s}
+.metric:hover::after,.metric:focus-visible::after{opacity:1;visibility:visible}
+.metric:focus-visible{outline:2px solid var(--lamp);outline-offset:3px}
 .chip{background:#241d14;color:var(--bone);border:1px solid #4a3f2c;border-radius:3px;font:inherit;font-size:11px;padding:3px 8px;cursor:pointer}
 .chip:hover{border-color:var(--lamp)}
 .chip:focus-visible,.act:focus-visible,.code-cell:focus-visible,#fiche:focus-visible,#transcript:focus-visible,#btn-begin:focus-visible,#btn-next-day:focus-visible{outline:2px solid var(--lamp);outline-offset:2px}

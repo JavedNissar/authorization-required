@@ -97,7 +97,9 @@ async function startDay(n) {
   desk.setMemos(data.memos || []);
 
   $('clock').textContent = day.clock;
+  $('clock').setAttribute('aria-label', `Shift time ${day.clock}`);
   $('daylabel').textContent = `DAY ${n} — ${data.date}`;
+  $('daylabel').setAttribute('aria-label', `Day ${n}, ${data.date}`);
   desk.logline(data.brief || '');
   if (n >= 6) term.show(); else term.hide();
   updatePay();
@@ -160,6 +162,7 @@ function tick(now) {
   const clockRuns = game.state !== 'LISTENING' && game.state !== 'CALLBACK';
   const call = day.tick(clockRuns ? dt * SPEED : 0, dispatchable);
   $('clock').textContent = day.clock;
+  $('clock').setAttribute('aria-label', `Shift time ${day.clock}`);
   audio.setHumLevel(fiche.flicker);
 
   if (call) fireCall(call);
@@ -275,10 +278,14 @@ game.on('state', async ({ state, ...detail }) => {
 
 function updatePay() {
   const t = game.totals;
-  const pay = $('pay');
-  pay.textContent = `$${t.money.toFixed(2)}  ·  ✗${t.complaints}  ·  −$${t.losses.toFixed(2)}`;
-  pay.setAttribute('aria-label', `Total commission ${t.money.toFixed(2)} dollars; ${t.complaints} complaints; ${t.losses.toFixed(2)} dollars in losses`);
+  $('commission').textContent = `$${t.money.toFixed(2)}`;
+  $('commission').setAttribute('aria-label', `Total commission ${t.money.toFixed(2)} dollars`);
+  $('complaints').textContent = `✗${t.complaints}`;
+  $('complaints').setAttribute('aria-label', `${t.complaints} complaints`);
+  $('losses').textContent = `−$${t.losses.toFixed(2)}`;
+  $('losses').setAttribute('aria-label', `Fraud losses ${t.losses.toFixed(2)} dollars`);
   $('quota').textContent = `QUOTA ${game.handled}/${day.data.quota}`;
+  $('quota').setAttribute('aria-label', `${game.handled} calls handled of quota ${day.data.quota}`);
 }
 
 function endDay() {
