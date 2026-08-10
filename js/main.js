@@ -331,6 +331,10 @@ function endDay() {
   running = false;
   audio.stopRing();
   const met = game.handled >= day.data.quota;
+  const adjustments = game.outcomes.map(outcomeNote).filter(Boolean);
+  const adjustmentHtml = adjustments.length
+    ? `<h3>ADJUSTMENTS</h3><ul class="adjustments">${adjustments.map(note => `<li>${note}</li>`).join('')}</ul>`
+    : '<p>No losses or complaints entered today.</p>';
   const body = `
     <table>
       <tr><td>Calls handled</td><td>${game.handled} / quota ${day.data.quota} ${met ? '✓' : '✗ SHORT'}</td></tr>
@@ -339,6 +343,7 @@ function endDay() {
       <tr><td>Fraud losses today</td><td>$${game.losses.toFixed(2)}</td></tr>
       <tr><td>Complaints today</td><td>${game.complaints}</td></tr>
     </table>
+    ${adjustmentHtml}
     <p>${day.data.epilogue || ''}</p>`;
 
   desk.dayEnd(`DAY ${dayNum} — ${day.data.date} — SHIFT END`, body, async () => {
@@ -364,6 +369,17 @@ function showEnding() {
   desk.dayEnd('AUTHORIZATION REQUIRED', ledger, () => {
     location.href = `${location.pathname}?seed=${SEED}`;
   }, 'START OVER');
+}
+
+function outcomeNote(result) {
+  const merchant = displayMerchant(result.call);
+  switch (result.outcome) {
+    case 'wrong-approve': return `${merchant}: $${result.call.amount.toFixed(2)} fraud loss — an invalid transaction was approved.`;
+    case 'wrong-decline': return `${merchant}: complaint — a valid transaction was declined.`;
+    case 'misread': return `${merchant}: complaint — the issued authorization code was read back incorrectly.`;
+    case 'missed': return `${merchant}: complaint — the call was not answered before closing.`;
+    default: return '';
+  }
 }
 
 function displayMerchant(call) { return call.merchantLabel || merchantName(call.merchant); }
