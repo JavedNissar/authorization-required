@@ -100,7 +100,8 @@ content/audio/lines.json      batch-TTS manifest; clips are optional
 tools/gen-days.mjs            deterministic day 2–14 content generator
 tools/gen-lines.mjs           rebuilds the spoken-line manifest
 tools/validate-content.mjs    campaign integrity checks
-tools/smoke.mjs               optional Playwright browser smoke test
+tools/smoke.mjs               Playwright browser smoke test
+tools/test-smoke.sh           starts the server and runs the smoke test
 tools/package.sh              creates the itch.io ZIP
 
 PLAN.md                       original implementation plan and tradeoffs
@@ -459,15 +460,14 @@ bash -n tools/package.sh
 
 ### Browser smoke test
 
-The game has no dependency on Playwright, but the optional test harness does:
+The shipped game has no runtime dependency on Playwright. Install the committed development dependency and run the wrapper:
 
 ```bash
-npm install --no-save playwright-core
-node tools/smoke.mjs
-rm -rf node_modules
+npm install
+npm run test:smoke
 ```
 
-The smoke test expects system Chromium at `/usr/bin/chromium` and a local server on port 8642. It exercises:
+The wrapper starts and stops the development server. The test detects Google Chrome on macOS and common Chrome/Chromium paths on Linux; set `CHROME_PATH` to override browser discovery and `SMOKE_PORT` to override port 8642. It exercises:
 
 - intro/audio unlock
 - first ring and pickup

@@ -1,16 +1,33 @@
 #!/usr/bin/env node
 // Headless browser smoke test for the static build. Requires playwright-core
 // only in the local development environment; it is not a game dependency.
+import { existsSync } from 'node:fs';
 import { chromium } from 'playwright-core';
 
-const browser = await chromium.launch({ executablePath: '/usr/bin/chromium', args: ['--no-sandbox', '--autoplay-policy=no-user-gesture-required'] });
+const browserCandidates = [
+  process.env.CHROME_PATH,
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+  '/Applications/Chromium.app/Contents/MacOS/Chromium',
+  '/usr/bin/chromium',
+  '/usr/bin/chromium-browser',
+  '/usr/bin/google-chrome',
+].filter(Boolean);
+const executablePath = browserCandidates.find(path => existsSync(path));
+if (!executablePath) {
+  throw new Error('Chrome/Chromium not found. Install it or set CHROME_PATH to its executable.');
+}
+
+const baseUrl = process.env.SMOKE_BASE_URL || 'http://127.0.0.1:8642';
+console.log(`Using browser: ${executablePath}`);
+console.log(`Testing: ${baseUrl}`);
+const browser = await chromium.launch({ executablePath, args: ['--no-sandbox', '--autoplay-policy=no-user-gesture-required'] });
 const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
 const errors = [];
 page.on('pageerror', e => errors.push(`PAGEERROR: ${e.message}`));
 page.on('console', m => { if (m.type() === 'error') errors.push(`CONSOLE: ${m.text()}`); });
 page.on('response', r => { if (r.status() >= 400) errors.push(`HTTP ${r.status()}: ${r.url()}`); });
 
-await page.goto('http://localhost:8642/index.html?seed=1971&speed=12');
+await page.goto(`${baseUrl}/index.html?seed=1971&speed=12`);
 await page.click('#btn-begin');
 await page.waitForFunction(() => document.getElementById('phone-state').textContent === 'LINE RINGING', null, { timeout: 20000 });
 console.log('✓ first call rings');
@@ -36,7 +53,7 @@ console.log('✓ fiche keyboard navigation');
 // Direct debug day verifies the terminal era initializes and renders.
 const act2 = await browser.newPage({ viewport: { width: 1280, height: 800 } });
 act2.on('pageerror', e => errors.push(`ACT2 PAGEERROR: ${e.message}`));
-await act2.goto('http://localhost:8642/index.html?seed=1971&day=6&speed=20');
+await act2.goto(`${baseUrl}/index.html?seed=1971&day=6&speed=20`);
 await act2.click('#btn-begin');
 await act2.waitForFunction(() => document.getElementById('phone-state').textContent === 'LINE RINGING', null, { timeout: 20000 });
 await act2.click('#btn-pickup');
@@ -47,7 +64,7 @@ await act2.screenshot({ path: '/tmp/charge-jam-act2.png' });
 // Final-day visual frame: the fixed film treatment must remain readable.
 const final = await browser.newPage({ viewport: { width: 1280, height: 800 } });
 final.on('pageerror', e => errors.push(`FINAL PAGEERROR: ${e.message}`));
-await final.goto('http://localhost:8642/index.html?seed=1971&day=14');
+await final.goto(`${baseUrl}/index.html?seed=1971&day=14`);
 await final.click('#btn-begin');
 await final.click('#fiche');
 await final.keyboard.press('1');

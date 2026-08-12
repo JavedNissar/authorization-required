@@ -1,0 +1,27 @@
+{
+  "name": "authorization-required",
+  "version": "1.0.0",
+  "description": "A static browser game about working a telephone credit-card authorization desk from 1971–1979. The campaign spans 14 shifts and takes approximately 45–60 minutes. Built with vanilla HTML, CSS, Canvas, Web Audio, ES modules, and JSON—no runtime dependencies or build step.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:content && npm run test:smoke",
+    "test:content": "node tools/validate-content.mjs",
+    "test:smoke": "tools/test-smoke.sh",
+    "serve": "tools/serve.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavedNissar/authorization-required.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavedNissar/authorization-required/issues"
+  },
+  "homepage": "https://github.com/JavedNissar/authorization-required#readme",
+  "devDependencies": {
+    "playwright-core": "^1.62.1"
+  }
+}

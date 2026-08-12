@@ -49,12 +49,14 @@ node tools/validate-content.mjs
 
 `content/audio/lines.json` is a batch-TTS manifest. Add a `file` property to any line after rendering its clip and place that file under `content/audio/`; the game loads it through the telephone filter automatically. Without clips, the shipped procedural murmur and complete subtitles are used.
 
-The optional browser smoke test uses locally installed `playwright-core` and system Chromium:
+Install the development tooling once, then run the browser smoke test:
 
 ```sh
-npm install --no-save playwright-core
-node tools/smoke.mjs
+npm install
+npm run test:smoke
 ```
+
+The test wrapper starts and stops the local server automatically. It detects Google Chrome on macOS and common Chrome/Chromium paths on Linux. For another installation, set `CHROME_PATH=/path/to/browser`. Use `SMOKE_PORT` to override port 8642.
 
 ## itch.io
 
